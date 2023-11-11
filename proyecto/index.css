@@ -1,0 +1,98 @@
+
+body{
+    width: 99%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) ,rgba(0, 2, 0, 0.9)), url("https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg");
+    height: 997px;
+    background-attachment: fixed;
+    text-align: center;
+}
+img{
+    width: 30%;
+}
+div{
+    background-color: none;
+    width: auto ;
+}
+.slogan{
+    background-color: rgba(0, 128, 80, 0.6);
+    color: white;
+    border-radius: 100px;
+    width: auto;
+    margin: 40px 100px 45px 100px;
+    padding: 10px;
+    border-bottom: solid 2px green;
+}
+.sing{
+    margin-top: 90px;
+    padding: 20px 50px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sing:hover, .continue:hover{
+    background-color: rgba(0, 128, 0, 0.6);
+    color: rgba(100, 115, 10);
+}
+.tx1{
+    cursor: pointer;
+    width: auto;
+    margin: 0px 260px 0px 260px;
+}
+.tx2:hover{
+    color: rgb(1, 118, 5);
+    font-size: 17px;
+}
+p{
+    color: green;
+}
+h1{
+    color: white;
+}
+
+/*  contenido2 A partir de aquí*/
+#ipt{   
+    margin: 5px 0px 0px 0px ;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px green;    
+    background-color: rgba(0, 128, 80, 0.0);
+    outline: none;
+    color: white;
+    border-radius: 100px;
+}
+#ipt:focus{
+    border-bottom: 2px rgb(7, 140, 7) solid;
+    border-radius: 0px;
+}
+::placeholder{
+    color: rgb(160, 203, 160);
+}
+.registrar{
+    margin: 10;
+    text-align: left;
+    padding: 30px 10px 0px 30px;
+    background-color: rgba(0, 128, 80, 0.6);
+    color: white;
+    border-radius: 10px;
+}
+.continue{
+    width: auto;
+    margin: 50px;
+    padding: 20px 50px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+}
+.btn2{
+    text-align: center;
+}
+.contenido2{
+    width: auto;
+    margin: 20px 400px 0px 400px;
+    text-align: center;
+}
