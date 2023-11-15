@@ -1,0 +1,13 @@
+input{
+    padding-left: 2px;
+    padding-right: 35px;
+    padding-top: 20px;
+    background-image: url('');
+    background-size: 25px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    width: 0%;
+    border-radius: 100px;
+    background-color: green;
+    border: none;
+}   
