@@ -1,13 +1,59 @@
-input{
-    padding-left: 2px;
-    padding-right: 35px;
-    padding-top: 20px;
-    background-image: url('');
-    background-size: 25px;
-    background-position: 5px center;
-    background-repeat: no-repeat;
-    width: 0%;
-    border-radius: 100px;
+*{
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+}
+.logo{
+    width: 20%;
+    margin: 5px;
+    cursor: pointer;
+}
+.Contenedor{
+    display: flex;
+    border-color: solid 2px greenyellow;
     background-color: green;
-    border: none;
-}   
+}
+.buscar{
+    position: relative;
+    padding: 5px;
+    margin-left: 730px;
+    margin-top: 35px;
+    text-align: end;
+}
+.buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+
+}
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: 	#008000;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.search-Icon{
+    width: 50%;
+    margin-top: 13px;
+}
+.buscar:hover input{
+    width: 300px;
+    
+}
+.buscar input:focus{
+    width: 300px;
+}
