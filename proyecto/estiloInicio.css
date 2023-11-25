@@ -2,6 +2,12 @@
     padding: 0%;
     margin: 0%;
     text-align: left;
+    
+}
+body{
+    justify-content: end;
+    background-color: #ccf2cc;
+    width: 100%;
 }
 .logo{
     width: 20%;
@@ -9,10 +15,13 @@
     cursor: pointer;
 }
 .Contenedor{
+    background-attachment: fixed;
     display: flex;
-    border-color: solid 2px greenyellow;
-    background-color: green;
+    border-color: solid 2px rgb(5, 8, 1);
+    background-color: #ff69b4;
+    border-bottom:  solid 1px;
 }
+
 .buscar{
     position: relative;
     padding: 5px;
@@ -21,40 +30,72 @@
     text-align: end;
 }
 .buscar input{ 
-    width: 0px;
+    background-color: #ccf2cc; 
+    width: 324%;
     height: 40px;
-    padding: 0 20px;
-    font-size: 18px;
+    padding: 0 0px 0 20px;
+    font-size: 12px;
     color: #000;
     outline: none;
-    border: 1px solid black;
-    border-radius: 3px;
-    transition: all 0.6s ease;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    transform: translatex(-290px); 
+    /*transition: all 0.6s ease;*/
 
 }   
 .btn{
+    border: none;
+    border-left: none;
     position: absolute;
     top: 0;
     right: 10;
-    background-color: 	#008000;
-    width: 55px;
-    height: 55px;
+    background-color: 	white;
+    width: 42.4px;
+    height: 40px;
     line-height: 55px;
     text-align: center;
     color: white;
     font-size: 20px;
-    border-radius: 10%;
+    border-radius: 0 8px 8px 0   ;
     cursor: pointer;
+    margin-top: 5px;
 }
 .search-Icon{
-    width: 50%;
-    margin-top: 13px;
+    width: 60%;
 }
-.buscar:hover input{
+/*.buscar:hover input{
     width: 300px;
     transform: translatex(-342px);
 }
 .buscar input:focus{
     width: 300px;
     transform: translatex(-342px);
+}*/
+
+/*contenedor2*/
+
+.contenedor2{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.area1, .area2, .area3, .area4, .area5, .area6{
+    margin: 1px;
+    width: 100%;
+    border: #000000 1px solid;
+    text-align: center;
+    padding: 10px;
+    background-color: #ff69b4;
+}
+h3{
+    color: #ccf2cc;
+    text-align: center;
+}
+.logo2{
+    text-align: center; 
+    border-bottom: solid #ccf2cc 1px; 
+    width: 100%;
+}
+.logo1{
+    width: 50%;
 }
