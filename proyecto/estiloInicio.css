@@ -1,12 +1,12 @@
 *{
     padding: 0%;
     margin: 0%;
-    text-align: left;
+    text-align: initial;
     
 }
+
 body{
-    justify-content: end;
-    background-color: #ccf2cc;
+    background-color: white;
     width: 100%;
 }
 .logo{
@@ -22,55 +22,7 @@ body{
     border-bottom:  solid 1px;
 }
 
-.buscar{
-    position: relative;
-    padding: 5px;
-    margin-left: 990px;
-    margin-top: 35px;
-    text-align: end;
-}
-.buscar input{ 
-    background-color: #ccf2cc; 
-    width: 324%;
-    height: 40px;
-    padding: 0 0px 0 20px;
-    font-size: 12px;
-    color: #000;
-    outline: none;
-    border: none;
-    border-radius: 8px 0px 0px 8px;
-    transform: translatex(-290px); 
-    /*transition: all 0.6s ease;*/
 
-}   
-.btn{
-    border: none;
-    border-left: none;
-    position: absolute;
-    top: 0;
-    right: 10;
-    background-color: 	white;
-    width: 42.4px;
-    height: 40px;
-    line-height: 55px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    border-radius: 0 8px 8px 0   ;
-    cursor: pointer;
-    margin-top: 5px;
-}
-.search-Icon{
-    width: 60%;
-}
-/*.buscar:hover input{
-    width: 300px;
-    transform: translatex(-342px);
-}
-.buscar input:focus{
-    width: 300px;
-    transform: translatex(-342px);
-}*/
 
 /*contenedor2*/
 
@@ -98,4 +50,20 @@ h3{
 }
 .logo1{
     width: 50%;
+}
+.tx1{
+    text-align: left;
+    color: #000;
+    margin-bottom: 30px;
+} 
+.info1{
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: justify;
+    font-size: large;
+    line-height: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
