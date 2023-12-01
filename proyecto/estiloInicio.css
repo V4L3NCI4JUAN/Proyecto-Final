@@ -1,25 +1,75 @@
 *{
     padding: 0%;
     margin: 0%;
-    text-align: initial;
+    text-align: left;
     
 }
+header{
+    background-image: linear-gradient(to top, rgba(5, 8, 1, 0.8), rgb(0, 0, 0)),  url('https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg');
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    border: none;
+    border-bottom:#ffff solid 2px;
+    box-shadow: inset 0 -10px 7.9px -3px #ffff;
+    
+}
+.logotipo{
+    text-align: center;
+    transform: translateY(70%);
+    border-bottom: ridge 1px  #fac3ce;
+    margin-left: 70px ;
+    margin-right: 70px;
 
+}
+.eslogan h1{
+
+    transform: translateY(500%);
+    text-align: center;
+    color: #fac3ce;
+}
 body{
-    background-color: white;
     width: 100%;
 }
 .logo{
-    width: 20%;
-    margin: 5px;
+    width: 14%;
+    margin: 2px;
+    margin-bottom: none;
     cursor: pointer;
 }
+.btn1{
+    background: none;
+    color: #ffff;
+    border: none;
+    position:relative;
+    transform: translateY(20px) translateX(965px);
+    border-left: 1px #ffff solid;
+    padding-left: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.btn1:hover{
+    background-color: #984f5d ;
+    transition: 0.3s ;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translateY(15px) translateX(964px); 
+    padding: 16px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
 .Contenedor{
-    background-attachment: fixed;
+    z-index: 2;
     display: flex;
-    border-color: solid 2px rgb(5, 8, 1);
-    background-color: #ff69b4;
-    border-bottom:  solid 1px;
+    border-color: solid 2px rgb(5, 8, 1, 0.6);
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0));
+    position: fixed;
+    width: 100%;
+    border: none;
+    border-bottom:#000000 solid 2px;
+    box-shadow:  0 5px 7.9px 3px #000000;
 }
 
 
@@ -29,27 +79,56 @@ body{
 .contenedor2{
     margin-top: 20px;
     display: flex;
+    padding: 2px;
     
 }
 .area1, .area2, .area3, .area4, .area5, .area6{
-    margin: 1px;
     width: 100%;
-    border: #000000 1px solid;
     text-align: center;
-    padding: 10px;
-    background-color: #ff69b4;
+    padding: 0px;
+    position:relative;
+    transform: translateY(2px) translateX(2px);
+    border-left: 1px #ffff solid;
+    padding-left: 0px;
+    padding: 1px;
+    text-align: center;
+}
+.area1:hover, .area2:hover, .area3:hover, .area4:hover, .area5:hover, .area6:hover{
+    background-color: #ceb8bc ;
+    border-radius: 5px;
+    transition: 0.3s ;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translateY(1px) translateX(1px); 
+    padding: 1px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.name-Area{
+    background-color: #fac3ce;
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
 }
 h3{
-    color: #ccf2cc;
+    color: #000000;
     text-align: center;
+    margin: none;
+    
 }
 .logo2{
     text-align: center; 
-    border-bottom: solid #ccf2cc 1px; 
     width: 100%;
+    margin: 0px;
+    height: 150.1px;
+    background-color: #000;
+    border-radius: 5px 5px 0 0;
 }
 .logo1{
-    width: 50%;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px 5px 0 0;
+    opacity: 0.7;
 }
 .tx1{
     text-align: left;
@@ -57,13 +136,19 @@ h3{
     margin-bottom: 30px;
 } 
 .info1{
-    background-color: white;
-    margin: 20px;
-    padding: 30px;
+    background-color: #ffff;
+    margin-top: 50px;
+    padding: 0px;
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
     text-align: justify;
+    justify-content: inherit;
     font-size: large;
     line-height: 33px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+.info{
+    width: 50%;
+    margin: 2pc;
 }

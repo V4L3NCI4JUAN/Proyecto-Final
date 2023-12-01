@@ -93,14 +93,6 @@ h1{
     text-align: center;
 }
 
-/*contenido3*/
-.contenido3{
-    width: auto;
-    margin: 20px 400px 0px 400px;
-    text-align: center;
-}
-
-
 @media screen and (max-width: 800px){
     .slogan{
         font-size: 12px;
@@ -118,7 +110,7 @@ h1{
     
 }
 @media screen and (max-width: 1200px){
-    .contenido2, .contenido3{
+    .contenido2{
         width: 89%;
         padding: 0px 0px 0px 30px;
         margin: 0px;
