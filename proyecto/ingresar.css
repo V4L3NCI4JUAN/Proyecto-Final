@@ -1,0 +1,138 @@
+
+body{
+    width: 99%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) ,rgba(0, 2, 0, 0.9)), url("https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg");
+    height: 997px;
+    background-attachment: fixed;
+    text-align: center;
+}
+img{
+    width: 30%;
+}
+.contenido{
+    background-color: none;
+    width: 100% ;
+}
+.slogan{
+    background-color: rgba(255, 105, 180, 0.3);
+    color: white;
+    border-radius: 100px;
+    width: auto;
+    margin: 40px 100px 45px 100px;
+    padding: 10px;
+    border-bottom: solid 2px #ff69b4;
+}
+.sing{
+    margin-top: 90px;
+    padding: 20px 50px;
+    background-color: rgba(255, 105, 180);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sing:hover, .continue:hover{
+    background-color: rgba(255, 192, 203, 0.6);
+    color: #efb4d2;
+}
+.tx2{
+    margin-left: 594px;
+    margin-right: 594px;
+    cursor: pointer;
+    background: none;
+    color: #ff69b4;
+    border: none;
+    padding: 0px;
+}
+.tx2:hover{
+    padding: 0px;
+    color: #ff69b4;
+    font-size: 12px;
+    margin-left: 590px;
+    margin-right: 590px;
+}
+p{
+    color: #ff69b4;
+}
+h1{
+    color: white;
+}
+
+/*contenido2 A partir de aquí*/
+.ipt{   
+    margin: 5px 0px 0px 0px ;
+    padding: 12px 10px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px #ff69b4;    
+    background-color: rgba(100, 27, 64, 0.3);
+    outline: none;
+    color: white;
+    border-radius: 100px;
+}
+.ipt:focus{
+    border-bottom: 2px rgba(208, 120, 164, 0.3) solid;
+    border-radius: 0px;
+}
+::placeholder{
+    color: rgba(199, 186, 193);
+}
+.registrar{
+    margin: 10px    ;
+    text-align: left;
+    padding: 30px 10px 0px 30px;
+    background-color: rgba(255, 105, 180, 0.3);
+    color: white;
+    border-radius: 10px;
+}
+.continue{
+    width: auto;
+    margin: 50px;
+    padding: 20px 50px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 105, 180);
+}
+.btn2{
+    text-align: center;
+}
+.contenido2{
+    width: auto;
+    margin: 20px 400px 0px 400px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .slogan{
+        font-size: 12px;
+        width: 89%;
+        padding: 20px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .tx1{
+        font-size: 10px;
+    }
+    .tx2{
+        font-size: medium;
+    }
+    
+}
+@media screen and (max-width: 1200px){
+    .contenido2{
+        width: 89%;
+        padding: 0px 0px 0px 30px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .continue{
+        width: 50%;
+        margin: 50px;
+        padding: 15px;
+    }
+    .ipt{
+        width: 90% ;
+    }
+}
