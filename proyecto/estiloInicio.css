@@ -152,3 +152,14 @@ h3{
     width: 50%;
     margin: 2pc;
 }
+.titulos {
+    background-color: #fac3ce;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    height: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
