@@ -116,12 +116,15 @@ body{
     padding: 1px;
     font-size: 15px;
     opacity: 0.7;
+    text-align: center;
+    
 }
 
 .name-Area{
     background-color: #fac3ce;
     padding: 5px;
     border-radius: 0 0 5px 5px;
+    text-align: center;
 }
 h3{
     color: #000000;
@@ -181,4 +184,6 @@ h3{
     font-weight: bold;
     height: 22px;
     font-family:'Times New Roman', Times, serif;
+    transform: translateX(63px); 
+    position: relative;
 }
