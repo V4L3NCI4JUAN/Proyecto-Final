@@ -55,3 +55,31 @@ body{
     border-bottom:#000000 solid 2px;
     box-shadow:  0 5px 7.9px 3px #000000;
 }
+.tx2{
+    text-align: left;
+    color: #000;
+    margin-bottom: 30px;
+    border-left: #000000 10px solid;
+    padding-left: 10px;
+    padding-top: 10px ;
+    width: 50%;
+    height: 40px;
+} 
+.info1{
+    background-color: #ffff;
+    margin-top: 50px;
+    padding: 0px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: justify;
+    justify-content: inherit;
+    font-size: large;
+    line-height: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    
+}
+.info{
+    width: 50%;
+    margin: 2pc;
+}
