@@ -59,7 +59,20 @@ body{
     font-size: 12px;
     opacity: 0.7;
 }
-
+.tx1{
+    text-align: justify;
+    justify-content: inherit;
+    font-size: large;
+    line-height: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2pc;
+    margin-left: 10px;
+    border-left: #000000 10px solid;
+    padding-left: 10px;
+    padding-top: 10px ;
+    width: 50%;
+    height: 40px;
+}
 .Contenedor{
     z-index: 2;
     display: flex;
@@ -130,10 +143,15 @@ h3{
     border-radius: 5px 5px 0 0;
     opacity: 0.7;
 }
-.tx1{
+.tx2{
     text-align: left;
     color: #000;
     margin-bottom: 30px;
+    border-left: #000000 10px solid;
+    padding-left: 10px;
+    padding-top: 10px ;
+    width: 50%;
+    height: 40px;
 } 
 .info1{
     background-color: #ffff;
@@ -147,6 +165,7 @@ h3{
     line-height: 33px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
+    
 }
 .info{
     width: 50%;
