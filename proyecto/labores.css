@@ -57,6 +57,24 @@ body{
     box-shadow:  0 5px 7.9px 3px #000000;
 
 }
+.tx1{
+    text-align: justify;
+    justify-content: inherit;
+    font-size: large;
+    line-height: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2pc;
+    margin-left: 10px;
+    border-left: #000000 10px solid;
+    padding-left: 10px;
+    padding-top: 10px ;
+    width: 100%;
+    height: 40px;
+}
+.tx1 h1{
+    margin-bottom: 30px;
+}
+
 .tx2{
     text-align: left;
     color: #000;
@@ -67,9 +85,9 @@ body{
     width: 50%;
     height: 40px;
 } 
-.info1{
+
+.info1, .info2{
     background-color: #ffff;
-    margin-top: 50px;
     padding: 0px;
     border-radius: 5px;
     width: 100%;
@@ -81,7 +99,15 @@ body{
     display: flex;
     
 }
+.info2{
+    margin-top: 60px;
+}
 .info{
-    width: 50%;
-    margin: 2pc;
+    width: 60%;
+    margin-left: 2pc;
+    margin-top: 4pc;
+}
+.info ol{
+    margin-left: 4pc;
+    margin-bottom: 5pc;
 }
