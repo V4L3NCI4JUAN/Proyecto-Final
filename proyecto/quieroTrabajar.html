@@ -39,6 +39,15 @@
                     <option value="dni">DNI</option>
                 </select>
                 <input type="number" id="documento" placeholder="Número de documento" required>
+                <select id="estadoCivil" required>
+                    <option selected disabled>Estado Civil</option>
+                    <option value="soltero">Solter@</option>
+                    <option value="casado">Casad@</option>
+                    <option value="viudo">Viud@</option>
+                    <option value="separado">Separad@</option>
+                    <option value="divorciado">Divorciad@</option>
+                    <option value="unionLibre">Unión Libre</option>
+                </select>
             </div>
             <div>
                 <h2>Información de Contacto</h2>
@@ -59,6 +68,18 @@
                 <input type="text" id="municipioResidencia" placeholder="Municipio" required>
                 <input type="text" id="direccion" placeholder="Dirección" required>
                 <input type="text" id="barrio" placeholder="Barrio" required>
+            </div>
+            <div>
+                <h2>Área de trabajo a la que se desea postular</h2>
+                <select id="cargo" required>
+                    <option selected disabled>Cargo</option>
+                    <option value="laboresArea">Labores</option>
+                    <option value="riegoArea">Riego</option>
+                    <option value="MantenimientoArea">Mantenimiento</option>
+                    <option value="fitosanidadArea">Fitosanidad</option>
+                    <option value="corteArea">Corte</option>
+                    <option value="postcosechaArea">Postcosecha</option>
+                </select>
             </div>
             <button>Enviar</button>
         </form>
