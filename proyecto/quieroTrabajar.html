@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="quieroTrabajar.css">
 </head>
 
-<header>
+<header style="display: none;">
     <div class="Contenedor" style="display: flex; ">
         <img action="inicio.html" onclick="dirijirAInicio()" class="logo" src="LogoDefinitivo1.png" alt="">  
     
@@ -24,12 +24,22 @@
     </div>
 
     <div>
-        <form action="">
-            <input type="text" placeholder="Primer Nombre" required>
-            <input type="text" placeholder="Segundo Nombre">
-            <input type="text" placeholder="Primer Apellido" required>
-            <input type="text" placeholder="Segundo Apellido" required>
-            <input type="tel" placeholder="Número de celular">
+        <form action="inicio.html">
+            <input type="text" id="primerNombre" placeholder="Primer Nombre" required>
+            <input type="text" id="segundoNombre" placeholder="Segundo Nombre">
+            <input type="text" id="primerApellido" placeholder="Primer Apellido" required>
+            <input type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
+            <input type="tel" id="celular" placeholder="Número de celular" required>
+            <select id="tipoDocumento" required>
+                <option selected disabled>Tipo de Documento</option>
+                <option value="registroCivil">Registro Civil</option>
+                <option value="tarjetaIdentidad">Tarjeta de Identidad</option>
+                <option value="cedulaCiudadania">Cédula de Ciudadanía</option>
+                <option value="cedulaExtranjeria">Cédula de Extranjería</option>
+                <option value="dni">DNI</option>
+            </select>
+            <input type="number" id="documento" placeholder="Número de documento" required>
+            <button>Enviar</button>
         </form>
     </div>
 
