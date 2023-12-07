@@ -20,25 +20,46 @@
 <body>
     <div>
         <h1>Quiero Trabajar en la Empresa</h1>
-        <p>Para esta selección te dejamos una lista detallada de que debes hacer si deseas trabajar en esta área de trabajo.</p> <br>
+        <p>Todos los campos son obligatorios </p> <br>
     </div>
 
     <div>
         <form action="inicio.html">
-            <input type="text" id="primerNombre" placeholder="Primer Nombre" required>
-            <input type="text" id="segundoNombre" placeholder="Segundo Nombre">
-            <input type="text" id="primerApellido" placeholder="Primer Apellido" required>
-            <input type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
-            <input type="tel" id="celular" placeholder="Número de celular" required>
-            <select id="tipoDocumento" required>
-                <option selected disabled>Tipo de Documento</option>
-                <option value="registroCivil">Registro Civil</option>
-                <option value="tarjetaIdentidad">Tarjeta de Identidad</option>
-                <option value="cedulaCiudadania">Cédula de Ciudadanía</option>
-                <option value="cedulaExtranjeria">Cédula de Extranjería</option>
-                <option value="dni">DNI</option>
-            </select>
-            <input type="number" id="documento" placeholder="Número de documento" required>
+            <div>
+                <h2>Infromación Personal </h2>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="primerApellido" placeholder="Primer Apellido" required>
+                <input type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
+                <select id="tipoDocumento" required>
+                    <option selected disabled>Tipo de Documento</option>
+                    <option value="registroCivil">Registro Civil</option>
+                    <option value="tarjetaIdentidad">Tarjeta de Identidad</option>
+                    <option value="cedulaCiudadania">Cédula de Ciudadanía</option>
+                    <option value="cedulaExtranjeria">Cédula de Extranjería</option>
+                    <option value="dni">DNI</option>
+                </select>
+                <input type="number" id="documento" placeholder="Número de documento" required>
+            </div>
+            <div>
+                <h2>Información de Contacto</h2>
+                <input type="tel" id="celular" placeholder="Número de Celular" required>
+                <input type="email" id="correo" placeholder="Correo Electrónico" required>
+            </div>
+            <div>
+                <h2>Información de Nacimiento</h2>
+                <input type="text" id="paisNacimiento" placeholder="País" required>
+                <input type="text" id="departamentoNacimiento" placeholder="Departamento" required>
+                <input type="text" id="municipioNacimiento" placeholder="Municipio" required>
+                <input type="date" id="fechaNacimiento" placeholder="Fecha" required>
+            </div>
+            <div>
+                <h2>Información de Residencia</h2>
+                <input type="text" id="paisResidencia" placeholder="País" required>
+                <input type="text" id="departamentoResidencia" placeholder="Departamento" required>
+                <input type="text" id="municipioResidencia" placeholder="Municipio" required>
+                <input type="text" id="direccion" placeholder="Dirección" required>
+                <input type="text" id="barrio" placeholder="Barrio" required>
+            </div>
             <button>Enviar</button>
         </form>
     </div>
