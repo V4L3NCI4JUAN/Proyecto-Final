@@ -23,7 +23,7 @@ function cerrarVentana(){
 }
 
 function IraRegistrar(){
-    window.location.href="ingresar.html";
+    window.location.href="index.html";
 }
 function agregarExperiencia(){
     createElement("input type=file");
