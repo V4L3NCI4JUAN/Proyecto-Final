@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>VILLAFLOR | INGRESAR</title>
+    <link rel="icon" href="LogoPestaña.ico">
     <link rel="stylesheet" href="ingresar.css">
 </head>
 <body>
@@ -13,8 +14,8 @@
         <div class="slogan"><h1>"Conectando culturas a través de las flores"</h1></div>
         <button onclick="enter()" class="sing" >REGISTRARSE</button>
         <p class="tx1">—————————— O ——————————</p>
-        <form action="">
-            <div><button class="tx2">Ingresar sin registrarse</button></div>
+        <form action="inicioSinIngreso.html">
+            <button class="tx2">Ingresar sin registrarse</button>
         </form>
     </div>
 
@@ -23,11 +24,11 @@
         <h1 class="tx3">REGISTRARSE</h1>
         <form action="inicio.html">
             <div  class="registrar">
-                <input class="ipt" type="text" placeholder="Nombre de Usuario" required><br><br><br>
-                <input class="ipt" type="email" placeholder="Correo Electronico" required><br><br><br>
-                <input class="ipt" type="password" placeholder="Contraseña" required><br><br><br>
+                <input id="user" class="ipt" type="text" placeholder="Nombre de Usuario" required><br><br><br>
+                <input id="email" class="ipt" type="email" placeholder="Correo Electronico" required><br><br><br>
+                <input id="password" class="ipt" type="password" placeholder="Contraseña" required><br><br><br>
                 <div class="btn2">
-                    <button class="continue">INGRESAR</button>
+                    <button onclick="hola" class="continue">INGRESAR</button>
                 </div>
             </div>
         </form>
