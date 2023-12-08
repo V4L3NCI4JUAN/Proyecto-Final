@@ -10,7 +10,6 @@ function enter(){
 function dirijirAInicio(){
     window.location.href="inicio.html";
 }
-
 function dirijirAQuieroTrabajar(){
     window.location.href="quieroTrabajar.html";
 }
@@ -26,5 +25,5 @@ function IraRegistrar(){
     window.location.href="index.html";
 }
 function agregarExperiencia(){
-    createElement("input type=file");
+    document.createElement("input");
 }
