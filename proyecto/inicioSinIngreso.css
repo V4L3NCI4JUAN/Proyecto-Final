@@ -2,7 +2,6 @@
     padding: 0%;
     margin: 0%;
     text-align: justify;
-    
 }
 header{
     background-image: linear-gradient(to top, rgba(5, 8, 1, 0.8), rgb(0, 0, 0)),  url('https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg');
@@ -61,8 +60,6 @@ body{
     opacity: 0.7;
 }
 .tx1{
-    text-align: justify;
-    justify-content: inherit;
     font-size: large;
     line-height: 33px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -156,13 +153,14 @@ h3{
     padding: 0px;
     border-radius: 5px;
     width: 100%;
-    text-align: justify;
-    justify-content: inherit;
     font-size: large;
     line-height: 33px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
-    
+    text-align: justify;
+}
+.info1 p{
+    text-align: justify;
 }
 .info{
     width: 50%;
@@ -182,3 +180,53 @@ h3{
     cursor: pointer;
    
 }
+.contenido-ventana{
+    display: none;
+    background-color: rgb(0, 0, 0, 0.5);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+.advertencia{
+    transform: translateY(200px) translateX(400px);
+    text-align: center;
+    background-color: #ffff;
+    padding-bottom: 25px;
+    width: 40%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.advertencia h1, p{
+    text-align: center;
+}
+.advertencia h1{
+    background-color: #ceb8bc;
+    padding: 8px;
+    border-radius: 5px 5px 0px 0px;
+}
+.advertencia p{
+    padding-top: 10px;
+
+}
+#cerrar{
+    padding: 12px 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ceb8bc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#Registrar{
+    padding: 12px 32.6px;
+    margin-top: 20px;
+    border: none;
+    background-color: #fa8d83;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
