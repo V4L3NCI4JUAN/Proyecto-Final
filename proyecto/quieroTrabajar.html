@@ -33,21 +33,21 @@
                 <input type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
                 <select id="tipoDocumento" required>
                     <option selected disabled>Tipo de Documento</option>
-                    <option value="registroCivil">Registro Civil</option>
-                    <option value="tarjetaIdentidad">Tarjeta de Identidad</option>
-                    <option value="cedulaCiudadania">Cédula de Ciudadanía</option>
-                    <option value="cedulaExtranjeria">Cédula de Extranjería</option>
-                    <option value="dni">DNI</option>
+                    <option value="Registro Civil">Registro Civil</option>
+                    <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                    <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+                    <option value="Cédula de Extranjería">Cédula de Extranjería</option>
+                    <option value="DNI">DNI</option>
                 </select>
                 <input type="number" id="documento" placeholder="Número de documento" required>
                 <select id="estadoCivil" required>
                     <option selected disabled>Estado Civil</option>
-                    <option value="soltero">Solter@</option>
-                    <option value="casado">Casad@</option>
-                    <option value="viudo">Viud@</option>
-                    <option value="separado">Separad@</option>
-                    <option value="divorciado">Divorciad@</option>
-                    <option value="unionLibre">Unión Libre</option>
+                    <option value="Solter@">Solter@</option>
+                    <option value="Casad@">Casad@</option>
+                    <option value="Viud@">Viud@</option>
+                    <option value="Separad@">Separad@</option>
+                    <option value="Divorciad@">Divorciad@</option>
+                    <option value="Unión Libre">Unión Libre</option>
                 </select>
             </div>
             <div>
@@ -59,14 +59,14 @@
                 <h2>Información de Nacimiento</h2>
                 <input type="text" id="paisNacimiento" placeholder="País" required>
                 <input type="text" id="departamentoNacimiento" placeholder="Departamento" required>
-                <input type="text" id="municipioNacimiento" placeholder="Municipio" required>
+                <input type="text" id="ciudadNacimiento" placeholder="Municipio/Ciudad" required>
                 <input type="date" id="fechaNacimiento" placeholder="Fecha" required>
             </div>
             <div>
                 <h2>Información de Residencia</h2>
                 <input type="text" id="paisResidencia" placeholder="País" required>
                 <input type="text" id="departamentoResidencia" placeholder="Departamento" required>
-                <input type="text" id="municipioResidencia" placeholder="Municipio" required>
+                <input type="text" id="ciudadResidencia" placeholder="Municipio/Ciudad" required>
                 <input type="text" id="direccion" placeholder="Dirección" required>
                 <input type="text" id="barrio" placeholder="Barrio" required>
             </div>
@@ -74,21 +74,21 @@
                 <h2>Área de trabajo a la que se desea postular</h2>
                 <select id="cargo" required>
                     <option selected disabled>Cargo</option>
-                    <option value="laboresArea">Labores</option>
-                    <option value="riegoArea">Riego</option>
-                    <option value="MantenimientoArea">Mantenimiento</option>
-                    <option value="fitosanidadArea">Fitosanidad</option>
-                    <option value="corteArea">Corte</option>
-                    <option value="postcosechaArea">Postcosecha</option>
+                    <option value="Labores">Labores</option>
+                    <option value="Riego">Riego</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                    <option value="Fitosanidad">Fitosanidad</option>
+                    <option value="Corte">Corte</option>
+                    <option value="Postcosecha">Postcosecha</option>
                 </select>
             </div>
             <div>
                 <h2>Experiencia Laboral</h2>
                 
             </div>
-            <button>Enviar</button>
+            <button onclick="">Enviar</button>
         </form>
-        <button onclick="agregarExperiencia()">Agregar</button>
+        <button onclick="enviar()">Agregar</button>
     </div>
 
     <script src="funciones.js"></script>
