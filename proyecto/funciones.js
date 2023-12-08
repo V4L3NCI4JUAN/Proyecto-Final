@@ -13,3 +13,7 @@ function dirijirAInicio(){
 function dirijirAQuieroTrabajar(){
     window.location.href="quieroTrabajar.html";
 }
+
+function agregarExperiencia(){
+    createElement("input type=file");
+}
