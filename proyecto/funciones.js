@@ -25,3 +25,6 @@ function cerrarVentana(){
 function IraRegistrar(){
     window.location.href="ingresar.html";
 }
+function agregarExperiencia(){
+    createElement("input type=file");
+}
