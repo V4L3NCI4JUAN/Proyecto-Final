@@ -54,15 +54,18 @@ function mostrar(){
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
-    datosPersonales.forEach((dato)=>{
+    longitud = datosPersonales.length-1;
+    console.log(longitud);
+    console.log(datosPersonales[longitud]);
+    /*datosPersonales.forEach((dato)=>{*/
         const listItem = document.createElement("li");
-        listItem.textContent = `-Nombre: ${dato.nombre} ${dato.primerApellido} ${dato.segundoApellido}
+        listItem.textContent = Object.values(datosPersonales[longitud]);/*`-Nombre: ${dato.nombre} ${dato.primerApellido} ${dato.segundoApellido}
         -Documento: ${dato.tipoDocumento}, ${dato.documento}
         -Estado Civil: ${dato.estadoCivil}
         -Celular: ${dato.celular} -Correo Electrónico: ${dato.correo}
         -Lugar de Nacimiento: ${dato.paisNacimiento}, ${dato.departamentoNacimiento}, ${dato.ciudadNacimiento}
         -Lugar de Residencia: ${dato.paisResidencia}, ${dato.departamentoResidencia}, ${dato.ciudadResidencia}, ${dato.direccion}, ${dato.barrio}
-        -Cargo: ${dato.cargo}`
+        -Cargo: ${dato.cargo}`*/
         listaDatos.appendChild(listItem);
-    });
+    /*});*/
 }
