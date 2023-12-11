@@ -1,9 +1,36 @@
 let contenido = document.getElementById('contenido');
 let contenido2 = document.getElementById('contenido2');
-let contenido_ventana = document.getElementById('contenido_ventana');
-function enter(){
-    document.getElementById('contenido').style.display="none";
-    document.getElementById('contenido2').style.display="block";
+let contenido3 = document.getElementById('contenido3');
+
+
+function GestionHumana(){
+    let emailEmpresa = document.getElementById('email_empresa').value;
+    let passwordEmpresa = document.getElementById('password_empresa').value;
+
+    if(emailEmpresa === 'villaflorempresa@gmail.com' && passwordEmpresa  === 'gestionhumana123'){
+        window.location.href="perfilGestionHumana.html"
+    } else{
+        alert('La direccion de correo o la contraseña son incorrectos. Por favor vuelva a intentarlo.')
+    }
+}
+
+function enter(boton) {
+    if(boton === 'boton1'){
+        if(contenido2.style.display === 'none'){
+            contenido2.style.display = 'block';
+            contenido.style.display = 'none';
+        }else{
+            contenido2.style.display = 'none';
+        }
+    }
+    if(boton === 'boton2'){
+        if(contenido3.style.display === 'none'){
+            contenido3.style.display = 'block';
+            contenido.style.display = 'none';
+        }else{
+            contenido3.style.display = 'none';
+        }
+    }
 }
 function dirijirAInicio(){
     window.location.href="inicio.html";
@@ -11,15 +38,7 @@ function dirijirAInicio(){
 function dirijirAQuieroTrabajar(){
     window.location.href="quieroTrabajar.html";
 }
-function desplegarVentana(){
-    document.getElementById('contenido_ventana').style.display='block';
-}
-function cerrarVentana(){
-    document.getElementById('contenido_ventana').style.display='none';
-}
-function IraRegistrar(){
-    window.location.href="index.html";
-}
+
 
 function enviar(){
     const nombre = document.getElementById("nombre").value;

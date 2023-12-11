@@ -7,30 +7,44 @@
     <link rel="stylesheet" href="ingresar.css">
 </head>
 <body>
+
+
     <img src="LogoDefinitivo1.png" alt="">
 
-    <div class="contenido" id="contenido"  style="display: block;">
+    <div class="contenido1" id="contenido"  style="display: block;">
         <div class="slogan"><h1>"Conectando culturas a través de las flores"</h1></div>
-        <button onclick="enter()" class="sing" >REGISTRARSE</button>
-        <p class="tx1">—————————— O ——————————</p>
-        <form action="inicio.html">
-            <div><button class="tx2">Ingresar sin registrarse</button></div>
-        </form>
+        <h2>Continuar Como:</h2>
+        <button onclick="enter('boton1')" class="sing" >GESTION HUMANA</button><br>
+        <button onclick="enter('boton2')" class="sing1" >USUARIO</button>
+    </div>
+
+    <div style="display: none;" id="contenido2" class="contenido2">
+        <h2 class="tx3">Iniciar Sesión</h2>
+        <div  class="registrar">
+            <input id="email_empresa" class="ipt" type="email" placeholder="Correo Electrónico" required><br><br>
+            <input id="password_empresa" class="ipt" type="password" placeholder="Contraseña" required><br><br>
+            <div class="btn2">
+                <button onclick="GestionHumana()" class="continue">Iniciar Sesión</button>
+            </div>
+        </div>
     </div>
 
 
-    <div style="display: none;" id="contenido2" class="contenido2">
-        <h1 class="tx3">REGISTRARSE</h1>
+    <div style="display: none;" id="contenido3" class="contenido2">
+        <h2 class="tx3">REGISTRARSE</h2>    
         <form action="inicio.html">
             <div  class="registrar">
-                <input class="ipt" type="text" placeholder="Nombre" required><br><br><br>
-                <input class="ipt" type="email" placeholder="Correo Electrónico" required><br><br><br>
-                <input class="ipt" type="password" placeholder="Contraseña" required><br><br><br>
+                <input class="ipt" type="text" placeholder="Nombre" required><br><br>
+                <input class="ipt" type="email" placeholder="Correo Electrónico" required><br><br>
+                <input class="ipt" type="password" placeholder="Contraseña" required><br><br>
                 <div class="btn2">
                     <button class="continue">REGISTRARSE</button>
                 </div>
             </div>
         </form>
+        <form action="inicio.html">
+            <div><button class="tx2">Ingresar sin registrarse</button></div> 
+        </form> 
     </div>
 
     <script src="funciones.js"></script> 
