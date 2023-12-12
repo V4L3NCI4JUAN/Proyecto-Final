@@ -1,7 +1,7 @@
 let contenido = document.getElementById('contenido');
 let contenido2 = document.getElementById('contenido2');
 let contenido3 = document.getElementById('contenido3');
-
+window.onload = mostrar();
 
 function GestionHumana(){
     let emailEmpresa = document.getElementById('email_empresa').value;
@@ -13,7 +13,6 @@ function GestionHumana(){
         alert('La direccion de correo o la contraseña son incorrectos. Por favor vuelva a intentarlo.')
     }
 }
-
 function enter(boton) {
     if(boton === 'boton1'){
         if(contenido2.style.display === 'none'){
