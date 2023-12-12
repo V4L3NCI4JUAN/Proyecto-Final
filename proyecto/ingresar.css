@@ -1,15 +1,17 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 body{
     width: 99%;
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) ,rgba(0, 2, 0, 0.9)), url("https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg");
-    height: 997px;
     background-attachment: fixed;
     text-align: center;
 }
 img{
     width: 30%;
 }
-.contenido{
+.contenido2{
     background-color: none;
     width: 100% ;
 }
@@ -18,12 +20,12 @@ img{
     color: white;
     border-radius: 100px;
     width: auto;
-    margin: 40px 100px 45px 100px;
+    margin: 0px 100px 0px 100px;
     padding: 10px;
     border-bottom: solid 2px #ff69b4;
 }
 .sing{
-    margin-top: 90px;
+    margin-top: 20px;
     padding: 20px 50px;
     background-color: rgba(255, 105, 180);
     color: white;
@@ -31,13 +33,25 @@ img{
     border-radius: 5px;
     cursor: pointer;
 }
-.sing:hover, .continue:hover{
+.sing1{
+    margin-top: 20px;
+    padding: 20px 80px;
+    background-color: rgba(255, 105, 180);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sing:hover, .sing1:hover, .continue:hover{
     background-color: rgba(255, 192, 203, 0.6);
     color: #efb4d2;
+}.tx1{
+    font-size: small;
+    margin: 0;
 }
 .tx2{
-    margin-left: 594px;
-    margin-right: 594px;
+    margin-left: 100px;
+    margin-right: 100px;
     cursor: pointer;
     background: none;
     color: #ff69b4;
@@ -48,19 +62,19 @@ img{
     padding: 0px;
     color: #ff69b4;
     font-size: 12px;
-    margin-left: 590px;
-    margin-right: 590px;
+    margin-left: 99px;
+    margin-right: 99px;
 }
 p{
     color: #ff69b4;
 }
-h1{
+h2{
     color: white;
 }
 
 /*contenido2 A partir de aquí*/
 .ipt{   
-    margin: 5px 0px 0px 0px ;
+    margin: 1px 0px 0px 0px ;
     padding: 12px 10px;
     width: 90%;
     border: none;
@@ -68,11 +82,11 @@ h1{
     background-color: rgba(100, 27, 64, 0.3);
     outline: none;
     color: white;
-    border-radius: 100px;
 }
 .ipt:focus{
     border-bottom: 2px rgba(208, 120, 164, 0.3) solid;
-    border-radius: 0px;
+    border-radius: 5px;
+    background-color: rgba(61, 18, 39, 0.3);
 }
 ::placeholder{
     color: rgba(199, 186, 193);
@@ -83,7 +97,7 @@ h1{
     padding: 30px 10px 0px 30px;
     background-color: rgba(255, 105, 180, 0.3);
     color: white;
-    border-radius: 10px;
+    border-ra   dius: 10px;
 }
 .continue{
     width: auto;
@@ -99,7 +113,7 @@ h1{
     text-align: center;
 }
 .contenido2{
-    width: auto;
+    width: 40%;
     margin: 20px 400px 0px 400px;
     text-align: center;
 }
@@ -112,16 +126,14 @@ h1{
         margin: 0px;
         margin-top: 20px;
     }
-    .tx1{
-        font-size: 10px;
-    }
     .tx2{
         font-size: medium;
     }
     
 }
+
 @media screen and (max-width: 1200px){
-    .contenido2{
+    .contenido3{
         width: 89%;
         padding: 0px 0px 0px 30px;
         margin: 0px;

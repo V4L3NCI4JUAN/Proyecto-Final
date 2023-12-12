@@ -1,21 +1,24 @@
 *{
     padding: 0%;
     margin: 0%;
-    text-align: justify;
+    color: #ffffff;
 }
 header{
-    height: 120px;
-    background-repeat: no-repeat;
-    background-size: 1400px;
+    width: 100%;
+    height: 100px;
     border: none;
-    border-bottom:#ffff solid 2px;
-    box-shadow: inset 0 -10px 7.9px -3px #ffff;
-    
+    border-bottom:#000000 solid 2px;
+    box-shadow: inset 0 -10px 7.9px -3px #000000;    
 }
 body{
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-size: 100%;
 }
+
 .logo{
     width: 14%;
     margin: 2px;
@@ -56,29 +59,12 @@ body{
     box-shadow:  0 5px 7.9px 3px #000000;
 
 }
-.tx1{
-    text-align: justify;
-    justify-content: inherit;
-    font-size: large;
-    line-height: 33px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 2pc;
-    margin-left: 10px;
-    border-left: #000000 10px solid;
-    padding-left: 10px;
-    padding-top: 10px ;
-    width: 100%;
-    height: 40px;
-}
-.tx1 h1{
-    margin-bottom: 30px;
-}
 
 .tx2{
     text-align: left;
-    color: #000;
+    color: #ffff;
     margin-bottom: 30px;
-    border-left: #000000 10px solid;
+    border-left: #ffff 10px solid;
     padding-left: 10px;
     padding-top: 10px ;
     width: 50%;
@@ -86,27 +72,47 @@ body{
 } 
 
 .info1, .info2{
-    background-color: #ffff;
+    margin-top: 5px;
     padding: 0px;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
     text-align: justify;
-    justify-content: inherit;
-    font-size: large;
+    font-size: medium;
     line-height: 33px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
+    display: block;
     
 }
-.info2{
-    margin-top: 60px;
+.tx1 h1{
+    margin-bottom: 30px;
 }
+.tx1{
+    text-align: justify;
+    line-height: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2pc;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 10px ;
+    width: 80%;
+    height: 40px;
+    color: #000;
+}
+.info1{
+    color: #0000;
+    width: 80%; 
+}
+ 
 .info{
-    width: 60%;
+    width: 95%;
     margin-left: 2pc;
-    margin-top: 4pc;
+    margin-top: 1pc;
 }
 .info ol{
     margin-left: 4pc;
     margin-bottom: 5pc;
+    width: 70%;
+}
+.todo{
+    transform: translateX(220px);
 }
