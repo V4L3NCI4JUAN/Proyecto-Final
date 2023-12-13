@@ -61,7 +61,7 @@ function enviar(){
     const cargo = document.getElementById("cargo").value;
 
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
-    datosPersonales.push({nombre,primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
+    datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
     paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
     ciudadResidencia,direccion,barrio,cargo});
 
