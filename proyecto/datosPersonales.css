@@ -40,8 +40,16 @@ h1{
     margin-right: 227.6px;
     border: #f48e87 solid 1px;
 }
+ul{
+    margin-left: 227.5px;
+    margin-top: 10px;
+    margin-right: 227.6px;
+    border: #000000 solid 1px;
+    padding: 10px;
+}
 li{
     list-style: none;
+    margin: 10px;
 }
 .lista{
     line-height: 30px;

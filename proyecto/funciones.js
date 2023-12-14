@@ -1,13 +1,14 @@
 let contenido = document.getElementById('contenido');
 let contenido2 = document.getElementById('contenido2');
 let contenido3 = document.getElementById('contenido3');
-window.onload = mostrar();
+window.onload = mostrar;
+window.onload = mostrarPerfiles;
 
 function GestionHumana(){
     let emailEmpresa = document.getElementById('email_empresa').value;
     let passwordEmpresa = document.getElementById('password_empresa').value;
 
-    if(emailEmpresa === 'villaflorempresa@gmail.com' && passwordEmpresa  === 'gestionhumana123'){
+    if(emailEmpresa === 'villafloraempresa@gmail.com' && passwordEmpresa  === 'gestionhumana123'){
         window.location.href="perfilGestionHumana.html"
     } else{
         alert('La direccion de correo o la contraseña son incorrectos. Por favor vuelva a intentarlo.')
@@ -69,14 +70,14 @@ function mostrar(){
     const residenciaItem = document.createElement("li");
     const cargoItem = document.createElement("li");
     
-    nombreItem.textContent = " " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
-    documentoItem.textContent = " "+dato.tipoDocumento+", "+dato.documento;
-    estadoItem.textContent = " "+dato.estadoCivil;
-    celularItem.textContent = " "+dato.celular;
-    correoItem.textContent = " "+dato.correo;
-    nacimientoItem.textContent = " "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
-    residenciaItem.textContent = " "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
-    cargoItem.textContent = " "+dato.cargo;
+    nombreItem.textContent = "Nombre: " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
+    documentoItem.textContent = "Documento: "+dato.tipoDocumento+", "+dato.documento;
+    estadoItem.textContent = "Estado Civil: "+dato.estadoCivil;
+    celularItem.textContent = "Número de Celular: "+dato.celular;
+    correoItem.textContent = "Correo Electrónico: "+dato.correo;
+    nacimientoItem.textContent = "Lugar y Fecha de Nacimiento: "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
+    residenciaItem.textContent = "Lugar de Residencia: "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
+    cargoItem.textContent = "Cargo al que aspira: "+dato.cargo;
         
     listaDatos.appendChild(nombreItem);
     listaDatos.appendChild(documentoItem);
@@ -113,4 +114,21 @@ function enviar(){
     ciudadResidencia,direccion,barrio,cargo});
 
     localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
+}
+function mostrarPerfiles(){
+    const listaPerfiles = document.getElementById("listaPerfiles");
+    listaPerfiles.innerHTML = "";
+    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
+    const liItem = document.createElement("li");
+
+    datosPersonales.forEach((elemento)=>{
+        liItem.textContent =
+        `-Nombre: ${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}
+        -Documento: ${elemento.tipoDocumento}, ${elemento.documento}
+        -Estado Civil: ${elemento.estadoCivil}
+        -Celular: ${elemento.celular} -Correo Electrónico: ${elemento.correo}
+        -Lugar de Nacimiento: ${elemento.paisNacimiento}, ${elemento.departamentoNacimiento}, ${elemento.ciudadNacimiento}
+        -Lugar de Residencia: ${elemento.paisResidencia}, ${elemento.departamentoResidencia}, ${elemento.ciudadResidencia}, ${elemento.direccion}, ${elemento.barrio}
+        -Cargo: ${elemento.cargo}`});
+        listaPerfiles.appendChild(liItem);
 }
