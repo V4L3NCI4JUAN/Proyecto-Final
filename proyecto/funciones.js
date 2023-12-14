@@ -1,7 +1,8 @@
 let contenido = document.getElementById('contenido');
 let contenido2 = document.getElementById('contenido2');
 let contenido3 = document.getElementById('contenido3');
-window.onload = mostrar();
+window.onload = mostrar;
+window.onload = mostrarPerfiles;
 
 function GestionHumana(){
     let emailEmpresa = document.getElementById('email_empresa').value;
@@ -113,4 +114,21 @@ function enviar(){
     ciudadResidencia,direccion,barrio,cargo});
 
     localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
+}
+function mostrarPerfiles(){
+    const listaPerfiles = document.getElementById("listaPerfiles");
+    listaPerfiles.innerHTML = "";
+    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
+    const liItem = document.createElement("li");
+
+    datosPersonales.forEach((elemento)=>{
+        liItem.textContent =
+        `-Nombre: ${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}
+        -Documento: ${elemento.tipoDocumento}, ${elemento.documento}
+        -Estado Civil: ${elemento.estadoCivil}
+        -Celular: ${elemento.celular} -Correo Electrónico: ${elemento.correo}
+        -Lugar de Nacimiento: ${elemento.paisNacimiento}, ${elemento.departamentoNacimiento}, ${elemento.ciudadNacimiento}
+        -Lugar de Residencia: ${elemento.paisResidencia}, ${elemento.departamentoResidencia}, ${elemento.ciudadResidencia}, ${elemento.direccion}, ${elemento.barrio}
+        -Cargo: ${elemento.cargo}`});
+        listaPerfiles.appendChild(liItem);
 }
