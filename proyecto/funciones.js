@@ -115,20 +115,7 @@ function enviar(){
 
     localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
 }
-function mostrarPerfiles(){
+function perfiles(){
     const listaPerfiles = document.getElementById("listaPerfiles");
     listaPerfiles.innerHTML = "";
-    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
-    const liItem = document.createElement("li");
-
-    datosPersonales.forEach((elemento)=>{
-        liItem.textContent =
-        `-Nombre: ${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}
-        -Documento: ${elemento.tipoDocumento}, ${elemento.documento}
-        -Estado Civil: ${elemento.estadoCivil}
-        -Celular: ${elemento.celular} -Correo Electrónico: ${elemento.correo}
-        -Lugar de Nacimiento: ${elemento.paisNacimiento}, ${elemento.departamentoNacimiento}, ${elemento.ciudadNacimiento}
-        -Lugar de Residencia: ${elemento.paisResidencia}, ${elemento.departamentoResidencia}, ${elemento.ciudadResidencia}, ${elemento.direccion}, ${elemento.barrio}
-        -Cargo: ${elemento.cargo}`});
-        listaPerfiles.appendChild(liItem);
 }
