@@ -54,6 +54,7 @@ function IraRegistrar(){
 }
 
 function mostrar(){
+    alert ("Datos enviados exitosamente");
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
@@ -69,14 +70,14 @@ function mostrar(){
     const residenciaItem = document.createElement("li");
     const cargoItem = document.createElement("li");
     
-    nombreItem.textContent = " " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
-    documentoItem.textContent = " "+dato.tipoDocumento+", "+dato.documento;
-    estadoItem.textContent = " "+dato.estadoCivil;
-    celularItem.textContent = " "+dato.celular;
-    correoItem.textContent = " "+dato.correo;
-    nacimientoItem.textContent = " "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
-    residenciaItem.textContent = " "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
-    cargoItem.textContent = " "+dato.cargo;
+    nombreItem.textContent = "Nombre: " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
+    documentoItem.textContent = "Documento: "+dato.tipoDocumento+", "+dato.documento;
+    estadoItem.textContent = "Estado Civil: "+dato.estadoCivil;
+    celularItem.textContent = "Número de Celular: "+dato.celular;
+    correoItem.textContent = "Correo Electrónico: "+dato.correo;
+    nacimientoItem.textContent = "Lugar y Fecha de Nacimiento: "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
+    residenciaItem.textContent = "Lugar de Residencia: "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
+    cargoItem.textContent = "Cargo al que aspira: "+dato.cargo;
         
     listaDatos.appendChild(nombreItem);
     listaDatos.appendChild(documentoItem);
