@@ -13,6 +13,7 @@ function GestionHumana(){
         alert('La direccion de correo o la contraseña son incorrectos. Por favor vuelva a intentarlo.')
     }
 }
+
 function enter(boton) {
     if(boton === 'boton1'){
         if(contenido2.style.display === 'none'){
@@ -31,21 +32,27 @@ function enter(boton) {
         }
     }
 }
+
 function dirijirAInicio(){
     window.location.href="inicio.html";
 }
+
 function dirijirAQuieroTrabajar(){
     window.location.href="quieroTrabajar.html";
 }
+
 function desplegarVentana(){
     document.getElementById('contenido_ventana').style.display='block';
 }
+
 function cerrarVentana(){
     document.getElementById('contenido_ventana').style.display='none';
 }
+
 function IraRegistrar(){
     window.location.href="index.html";
 }
+
 function mostrar(){
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
@@ -62,14 +69,14 @@ function mostrar(){
     const residenciaItem = document.createElement("li");
     const cargoItem = document.createElement("li");
     
-    nombreItem.textContent = "Nombre: "+dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
-    documentoItem.textContent = "Documento: "+dato.tipoDocumento+", "+dato.documento;
-    estadoItem.textContent = "Estado Civil: "+dato.estadoCivil;
-    celularItem.textContent = "Celular: "+dato.celular;
-    correoItem.textContent = "Correo: "+dato.correo;
-    nacimientoItem.textContent = "Lugar y Fecha de Nacimiento: "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
-    residenciaItem.textContent = "Lugar de Residencia: "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
-    cargoItem.textContent = "Cargo al que aplica: "+dato.cargo;
+    nombreItem.textContent = " " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
+    documentoItem.textContent = " "+dato.tipoDocumento+", "+dato.documento;
+    estadoItem.textContent = " "+dato.estadoCivil;
+    celularItem.textContent = " "+dato.celular;
+    correoItem.textContent = " "+dato.correo;
+    nacimientoItem.textContent = " "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
+    residenciaItem.textContent = " "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
+    cargoItem.textContent = " "+dato.cargo;
         
     listaDatos.appendChild(nombreItem);
     listaDatos.appendChild(documentoItem);
