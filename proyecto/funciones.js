@@ -54,7 +54,6 @@ function IraRegistrar(){
 }
 
 function mostrar(){
-    alert ("Datos enviados exitosamente");
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
