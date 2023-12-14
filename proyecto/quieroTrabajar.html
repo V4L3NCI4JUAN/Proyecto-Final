@@ -8,93 +8,95 @@
     <link rel="stylesheet" href="quieroTrabajar.css">
 </head>
 
-<header style="display: none;">
+<header>
     <div class="Contenedor" style="display: flex; ">
         <img action="inicio.html" onclick="dirijirAInicio()" class="logo" src="LogoDefinitivo1.png" alt="">  
-    
-        <div class="Select-btn1">
-            <button class="btn1" onclick="dirijirAQuieroTrabajar()">Quiero Trabajar<br>En La Empresa</button>  
-        </div>
     </div>
 </header>
 
 <body>
-    <div>
+    <div class="tx1">
         <h1>Quiero Trabajar en la Empresa</h1>
         <p>Todos los campos son obligatorios </p> <br>
     </div>
 
-    <div>
-        <form action="datosPersonales.html">
-            <div>
-                <h2>Información Personal </h2>
-                <input type="text" id="nombre" placeholder="Nombre" required>
-                <input type="text" id="primerApellido" placeholder="Primer Apellido" required>
-                <input type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
-                <select id="tipoDocumento" required>
-                    <option selected disabled>Tipo de Documento</option>
-                    <option value="Registro Civil">Registro Civil</option>
-                    <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
-                    <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
-                    <option value="Cédula de Extranjería">Cédula de Extranjería</option>
-                    <option value="DNI">DNI</option>
-                </select>
-                <input type="number" id="documento" placeholder="Número de documento" required>
-                <select id="estadoCivil" required>
-                    <option selected disabled>Estado Civil</option>
-                    <option value="Solter@">Solter@</option>
-                    <option value="Casad@">Casad@</option>
-                    <option value="Viud@">Viud@</option>
-                    <option value="Separad@">Separad@</option>
-                    <option value="Divorciad@">Divorciad@</option>
-                    <option value="Unión Libre">Unión Libre</option>
-                </select>
-            </div>
-            <div>
-                <h2>Información de Contacto</h2>
-                <input type="number" id="celular" placeholder="Número de Celular" required>
-                <input type="email" id="correo" placeholder="Correo Electrónico" required>
-            </div>
-            <div>
-                <h2>Información de Nacimiento</h2>
-                <input type="text" id="paisNacimiento" placeholder="País" required>
-                <input type="text" id="departamentoNacimiento" placeholder="Departamento" required>
-                <input type="text" id="ciudadNacimiento" placeholder="Municipio/Ciudad" required>
-                <input type="date" id="fechaNacimiento" placeholder="Fecha" required>
-            </div>
-            <div>
-                <h2>Información de Residencia</h2>
-                <input type="text" id="paisResidencia" placeholder="País" required>
-                <input type="text" id="departamentoResidencia" placeholder="Departamento" required>
-                <input type="text" id="ciudadResidencia" placeholder="Municipio/Ciudad" required>
-                <input type="text" id="direccion" placeholder="Dirección" required>
-                <input type="text" id="barrio" placeholder="Barrio" required>
-            </div>
-            <div>
-                <h2>Área de trabajo a la que se desea postular</h2>
-                <select id="cargo" required>
-                    <option selected disabled>Cargo</option>
-                    <option value="Labores">Labores</option>
-                    <option value="Riego">Riego</option>
-                    <option value="Mantenimiento">Mantenimiento</option>
-                    <option value="Fitosanidad">Fitosanidad</option>
-                    <option value="Corte">Corte</option>
-                    <option value="Postcosecha">Postcosecha</option>
-                </select>
-            </div>
-            <div>
-                <h2>Experiencia Laboral</h2>
-                <p>Agregar tus archivos de experiencia laboral</p>
-                <input type="file" id="experiencia1">
-                <input type="file" id="experiencia2">
-                <input type="file" id="experiencia3">
-                <input type="file" id="experiencia4">
-                <input type="file" id="experiencia5">
-            </div>
-            <button onclick="enviar()">Enviar</button>
-        </form>
+    <div class="Contenedor2">
+        
+        <div t class="contenido">
+            <form action="datosPersonales.html">
+                <div class="div-foto">
+                    <input  type="file" name="foto" class="foto">
+                </div>
+                <div class="contenedor-datos">
+                    <h3>Información Personal </h3>
+                    <input class="ipt1" type="text" id="nombre" placeholder="Nombre" required>
+                    <input class="ipt1" type="text" id="primerApellido" placeholder="Primer Apellido" required>
+                    <input class="ipt1" type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
+                    <select class="ipt2" id="tipoDocumento" required>
+                        <option selected disabled>Tipo de Documento</option>
+                        <option value="Registro Civil">Registro Civil</option>
+                        <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                        <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+                        <option value="Cédula de Extranjería">Cédula de Extranjería</option>
+                        <option value="DNI">DNI</option>
+                    </select>
+                    <input class="ipt1" type="number" id="documento" placeholder="Número de documento" required>
+                    <select class="ipt2" id="estadoCivil" required>
+                        <option selected disabled>Estado Civil</option>
+                        <option value="Solter@">Solter@</option>
+                        <option value="Casad@">Casad@</option>
+                        <option value="Viud@">Viud@</option>
+                        <option value="Separad@">Separad@</option>
+                        <option value="Divorciad@">Divorciad@</option>
+                        <option value="Unión Libre">Unión Libre</option>
+                    </select>
+                </div>
+                <div class="contenedor-datos">
+                    <h3>Información de Contacto</h3>
+                    <input class="ipt1" type="number" id="celular" placeholder="Número de Celular" required>
+                    <input class="ipt1" type="email" id="correo" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="contenedor-datos">
+                    <h3>Información de Nacimiento</h3>
+                    <input class="ipt1" type="text" id="paisNacimiento" placeholder="País" required>
+                    <input class="ipt1" type="text" id="departamentoNacimiento" placeholder="Departamento" required>
+                    <input class="ipt1" type="text" id="ciudadNacimiento" placeholder="Municipio/Ciudad" required>
+                    <input class="ipt1" type="date" id="fechaNacimiento" placeholder="Fecha" required>
+                </div>
+                <div class="contenedor-datos">
+                    <h3>Información de Residencia</h3>
+                    <input class="ipt1" type="text" id="paisResidencia" placeholder="País" required>
+                    <input class="ipt1" type="text" id="departamentoResidencia" placeholder="Departamento" required>
+                    <input class="ipt1" type="text" id="ciudadResidencia" placeholder="Municipio/Ciudad" required>
+                    <input class="ipt1" type="text" id="direccion" placeholder="Dirección" required>
+                    <input class="ipt3" type="text" id="barrio" placeholder="Barrio" required>
+                </div>
+                <div class="contenedor-datos">
+                    <h3>Área de trabajo a la que se desea postular</h3>
+                    <select class="ipt3" id="cargo" required>
+                        <option selected disabled>Cargo</option>
+                        <option value="Labores">Labores</option>
+                        <option value="Riego">Riego</option>
+                        <option value="Mantenimiento">Mantenimiento</option>
+                        <option value="Fitosanidad">Fitosanidad</option>
+                        <option value="Corte">Corte</option>
+                        <option value="Postcosecha">Postcosecha</option>
+                    </select>
+                </div>
+                <div class="contenedor-datos">
+                    <h3>Experiencia Laboral</h3>
+                    <p>Agregar tus archivos de experiencia laboral</p>
+                    <input class="ipt4" type="file" id="experiencia1">
+                    <input class="ipt4" type="file" id="experiencia2">
+                    <input class="ipt4" type="file" id="experiencia3">
+                    <input class="ipt4" type="file" id="experiencia4">
+                    <input class="ipt4" type="file" id="experiencia5">
+                </div>
+                <button class="btn-Enviar" onclick="enviar()">Enviar</button>
+            </form>
+        </div>
     </div>
 
     <script src="funciones.js"></script>
-</body>
+</body>     
 </html>
