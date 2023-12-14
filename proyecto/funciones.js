@@ -1,8 +1,6 @@
 let contenido = document.getElementById('contenido');
 let contenido2 = document.getElementById('contenido2');
 let contenido3 = document.getElementById('contenido3');
-window.onload = mostrar;
-window.onload = mostrarPerfiles;
 
 function GestionHumana(){
     let emailEmpresa = document.getElementById('email_empresa').value;
@@ -53,7 +51,6 @@ function cerrarVentana(){
 function IraRegistrar(){
     window.location.href="index.html";
 }
-
 function mostrar(){
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
@@ -118,4 +115,12 @@ function enviar(){
 function perfiles(){
     const listaPerfiles = document.getElementById("listaPerfiles");
     listaPerfiles.innerHTML = "";
+    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"));
+    const li = document.createElement("li");
+    const salto = document.createElement("br");
+    
+    datosPersonales.forEach((elemento) =>{
+        li.textContent = "Nombre: "+elemento.nombre+"Documento";
+    })
+    listaPerfiles.appendChild(li)
 }
