@@ -80,15 +80,32 @@ function validarDatos(){
     const experiencia3 = document.getElementById("experiencia3").value;
     const experiencia4 = document.getElementById("experiencia4").value;
     const experiencia5 = document.getElementById("experiencia5").value;
-}
-function enviar(){
-    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
-    datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
-    paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
-    ciudadResidencia,direccion,barrio,cargo,foto,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
 
-    localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
+    if (tipoDocumento=="Tipo de Documento"){
+        alert("Seleccione su tipo de documento")
+    }else if (estadoCivil=="Estado Civil"){
+        alert("Seleccione su estado civil")
+    }else if (cargo=="Cargo"){
+        alert("Seleccione el cargo al que se desea postular")
+    }else if (nombre==""||primerApellido==""||segundoApellido==""||documento==""||celular==""||correo==""||barrio==""){
+        alert ("Faltan datos por llenar")
+    }else if (paisNacimiento==""||paisResidencia==""||ciudadNacimiento==""||ciudadResidencia==""||departamentoNacimiento==""||departamentoResidencia==""){
+        alert ("Faltan datos por llenar")
+    }else if (direccion==""||fechaNacimiento==""||foto==""){
+        alert ("Faltan datos por llenar")
+    }else{
+        const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
+        datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
+        paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
+        ciudadResidencia,direccion,barrio,cargo,foto,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
+        
+        localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
+        window.location.href="datosPersonales.html";
+    }
 }
+
+    
+    
 
 function mostrar(){
     const listaDatos = document.getElementById("listaDatos");

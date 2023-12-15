@@ -23,7 +23,7 @@
     <div class="Contenedor2">
         
         <div class="contenido">
-            <form action="datosPersonales.html">
+            <form>
                 <div class="div-foto">
                     <input  type="file" id="foto" class="foto" required>
                 </div>
@@ -32,8 +32,8 @@
                     <input class="ipt1" type="text" id="nombre" placeholder="Nombre" required>
                     <input class="ipt1" type="text" id="primerApellido" placeholder="Primer Apellido" required>
                     <input class="ipt1" type="text" id="segundoApellido" placeholder="Segundo Apellido" required>
-                    <select class="ipt2" id="tipoDocumento" required>
-                        <option selected disabled>Tipo de Documento</option>
+                    <select class="ipt2" id="tipoDocumento">
+                        <option value="Tipo de Documento" selected disabled>Tipo de Documento</option>
                         <option value="Registro Civil">Registro Civil</option>
                         <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
                         <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
@@ -41,8 +41,8 @@
                         <option value="DNI">DNI</option>
                     </select>
                     <input class="ipt1" type="number" id="documento" placeholder="Número de documento" required>
-                    <select class="ipt2" id="estadoCivil" required>
-                        <option selected disabled>Estado Civil</option>
+                    <select class="ipt2" id="estadoCivil">
+                        <option value="Estado Civil" selected disabled>Estado Civil</option>
                         <option value="Solter@">Solter@</option>
                         <option value="Casad@">Casad@</option>
                         <option value="Viud@">Viud@</option>
@@ -73,8 +73,8 @@
                 </div>
                 <div class="contenedor-datos">
                     <h3>Área de trabajo a la que se desea postular</h3>
-                    <select class="ipt3" id="cargo" required>
-                        <option selected disabled>Cargo</option>
+                    <select class="ipt3" id="cargo">
+                        <option value="Cargo" selected disabled>Cargo</option>
                         <option value="Labores">Labores</option>
                         <option value="Riego">Riego</option>
                         <option value="Mantenimiento">Mantenimiento</option>
