@@ -188,7 +188,7 @@ function perfiles(){
         cargoItem.textContent = `Cargo al que aspira: ${elemento.cargo}`;
         experiencias.textContent = `Experiencia Laboral: ${elemento.experiencia1} ${elemento.experiencia2} ${elemento.experiencia3} ${elemento.experiencia4} ${elemento.experiencia5}`;
 
-        listaPerfiles.appendChild(nombreItem);
+        botonPerfiles.appendChild(nombreItem);
         listaPerfiles.appendChild(documentoItem);
         listaPerfiles.appendChild(estadoItem);
         listaPerfiles.appendChild(celularItem);
@@ -200,6 +200,5 @@ function perfiles(){
         listaPerfiles.appendChild(cargoItem);
         listaPerfiles.appendChild(fotoItem)   
         listaPerfiles.appendChild(experiencias); 
-    })
-    
+    })   
 }
