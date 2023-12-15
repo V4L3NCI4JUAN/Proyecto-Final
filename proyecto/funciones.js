@@ -75,6 +75,7 @@ function enviar(){
     const direccion = document.getElementById("direccion").value;
     const barrio = document.getElementById("barrio").value;
     const cargo = document.getElementById("cargo").value;
+    const foto = document.getElementById("foto").value;
     const experiencia1 = document.getElementById("experiencia1").value;
     const experiencia2 = document.getElementById("experiencia2").value;
     const experiencia3 = document.getElementById("experiencia3").value;
@@ -84,7 +85,7 @@ function enviar(){
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
     datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
     paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
-    ciudadResidencia,direccion,barrio,cargo,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
+    ciudadResidencia,direccion,barrio,cargo,foto,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
 
     localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
 }
@@ -104,7 +105,14 @@ function mostrar(){
     const nacimientoItem = document.createElement("li");
     const residenciaItem = document.createElement("li");
     const cargoItem = document.createElement("li");
+    const fotoItem = document.createElement("li");
     const experiencias = document.createElement("li");
+    dato.experiencia1 = dato.experiencia1.substring(12);
+    dato.experiencia2 = dato.experiencia2.substring(12);
+    dato.experiencia3 = dato.experiencia3.substring(12);
+    dato.experiencia4 = dato.experiencia4.substring(12);
+    dato.experiencia5 = dato.experiencia5.substring(12);
+    dato.foto = dato.foto.substring(12);
 
     nombreItem.textContent = "Nombre: " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
     documentoItem.textContent = "Documento: "+dato.tipoDocumento+", "+dato.documento;
@@ -114,8 +122,9 @@ function mostrar(){
     nacimientoItem.textContent = "Lugar y Fecha de Nacimiento: "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
     residenciaItem.textContent = "Lugar de Residencia: "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
     cargoItem.textContent = "Cargo al que aspira: "+dato.cargo;
-    experiencias.textContent = "Experiencia: "+dato.experiencia1+dato.experiencia2+dato.experiencia3+dato.experiencia4+dato.experiencia5;
-        
+    fotoItem.textContent = "Foto: "+dato.foto;
+    experiencias.textContent = "Experiencia: "+dato.experiencia1+" "+dato.experiencia2+" "+dato.experiencia3+" "+dato.experiencia4+" "+dato.experiencia5;
+   
     listaDatos.appendChild(nombreItem);
     listaDatos.appendChild(documentoItem);
     listaDatos.appendChild(estadoItem);
@@ -123,18 +132,60 @@ function mostrar(){
     listaDatos.appendChild(correoItem);
     listaDatos.appendChild(nacimientoItem);
     listaDatos.appendChild(residenciaItem);
-    listaDatos.appendChild(cargoItem);   
+    listaDatos.appendChild(cargoItem);
+    listaDatos.appendChild(fotoItem)   
     listaDatos.appendChild(experiencias); 
 }
 
 function perfiles(){
     const listaPerfiles = document.getElementById("listaPerfiles");
     listaPerfiles.innerHTML = "";
-    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"));
-    const li = document.createElement("li");
+    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];  
     
     datosPersonales.forEach((elemento) =>{
-        li.textContent = "Nombre: "+elemento.nombre+"Documento";
+        const nombreItem = document.createElement("button");
+        const documentoItem = document.createElement("li");
+        const estadoItem = document.createElement("li");
+        const celularItem = document.createElement("li");
+        const correoItem = document.createElement("li");
+        const nacimientoItem = document.createElement("li");
+        const fechaNacimientoItem = document.createElement("li");
+        const residenciaItem = document.createElement("li");
+        const barrioItem = document.createElement("li");
+        const cargoItem = document.createElement("li");
+        const fotoItem = document.createElement("li");
+        const experiencias = document.createElement("li");
+        elemento.experiencia1 = elemento.experiencia1.substring(12);
+        elemento.experiencia2 = elemento.experiencia2.substring(12);
+        elemento.experiencia3 = elemento.experiencia3.substring(12);
+        elemento.experiencia4 = elemento.experiencia4.substring(12);
+        elemento.experiencia5 = elemento.experiencia5.substring(12);
+
+        nombreItem.textContent = `${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}`;
+        documentoItem.textContent = `Documento: ${elemento.tipoDocumento}, ${elemento.documento}`;
+        estadoItem.textContent = `Estado Civil: ${elemento.estadoCivil}`;
+        celularItem.textContent = `Número de Celular: ${elemento.celular}`;
+        correoItem.textContent = `Correo Electrónico: ${elemento.correo}`;
+        nacimientoItem.textContent = `Lugar de Nacimiento: ${elemento.paisNacimiento} - ${elemento.departamentoNacimiento} - ${elemento.ciudadNacimiento}`;
+        fechaNacimientoItem.textContent = `Fecha de Nacimiento: ${elemento.fechaNacimiento}`;
+        residenciaItem.textContent = `Lugar de Residencia: ${elemento.paisResidencia} - ${elemento.departamentoResidencia} - ${elemento.ciudadResidencia}`;
+        barrioItem.textContent = `Dirección: ${elemento.direccion} (${elemento.barrio})`;
+        fotoItem.textContent = `Foto: ${elemento.foto}`;
+        cargoItem.textContent = `Cargo al que aspira: ${elemento.cargo}`;
+        experiencias.textContent = `Experiencia Laboral: ${elemento.experiencia1} ${elemento.experiencia2} ${elemento.experiencia3} ${elemento.experiencia4} ${elemento.experiencia5}`;
+
+        listaPerfiles.appendChild(nombreItem);
+        listaPerfiles.appendChild(documentoItem);
+        listaPerfiles.appendChild(estadoItem);
+        listaPerfiles.appendChild(celularItem);
+        listaPerfiles.appendChild(correoItem);
+        listaPerfiles.appendChild(nacimientoItem);
+        listaPerfiles.appendChild(fechaNacimientoItem);
+        listaPerfiles.appendChild(residenciaItem);
+        listaPerfiles.appendChild(barrioItem);
+        listaPerfiles.appendChild(cargoItem);
+        listaPerfiles.appendChild(fotoItem)   
+        listaPerfiles.appendChild(experiencias); 
     })
-    listaPerfiles.appendChild(li)
+    
 }

@@ -2,7 +2,6 @@
     padding: 0%;
     margin: 0%;
     text-align: justify;
-    
 }
 header{
     background-image: linear-gradient(to top, rgba(5, 8, 1, 0.8), rgb(0, 0, 0)),  url('https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg');
@@ -13,7 +12,6 @@ header{
     border: none;
     border-bottom:#ffff solid 2px;
     box-shadow: inset 0 -10px 7.9px -3px #ffff;
-    
 }
 .logotipo{
     text-align: center;
@@ -21,10 +19,8 @@ header{
     border-bottom: ridge 1px  #fac3ce;
     margin-left: 70px ;
     margin-right: 70px;
-
 }
 .eslogan h1{
-
     transform: translateY(500%);
     text-align: center;
     color: #fac3ce;
@@ -107,21 +103,16 @@ body{
     box-shadow:  0 5px 7.9px 3px #000000;
 }
 
-
-
 /*contenedor2*/
-
 .contenedor2{
     margin-top: 20px;
     display: flex;
     padding: 1px;
-    
 }
 .area1, .area2, .area3, .area4, .area5, .area6{
     width: 100%;
     text-align: center;
     padding: 0px;
-    
     border-left: 1px #ffff solid;
     padding-left: 0px;
     padding: 1px;
@@ -136,12 +127,10 @@ body{
     font-size: 15px;
     opacity: 0.7;
     text-align: center;
-    
 }
 form{
     width: 100%;
 }
-
 .name-Area{
     background-color: #fac3ce;
     padding: 0px;
@@ -152,10 +141,8 @@ form{
 h3{
     color: #000000;
     text-align: center;
-    margin: none;
-    
+    margin: none; 
 }
-
 .logo1{
     width: 100%;
     height: 150px;
@@ -183,7 +170,6 @@ h3{
     line-height: 33px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
-    
 }
 .info{
     width: 50%;
@@ -201,5 +187,4 @@ h3{
     padding: 5px;
     width: 100%;
     cursor: pointer;
-   
 }
