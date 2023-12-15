@@ -117,7 +117,6 @@ function perfiles(){
     listaPerfiles.innerHTML = "";
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"));
     const li = document.createElement("li");
-    const salto = document.createElement("br");
     
     datosPersonales.forEach((elemento) =>{
         li.textContent = "Nombre: "+elemento.nombre+"Documento";
