@@ -32,11 +32,15 @@ function enter(boton) {
     }
 }
 
-function dirijirAInicio(){
+function dirigirANuestrosProductos(){
+    window.location.href="flores.html"
+}
+
+function dirigirAInicio(){
     window.location.href="inicio.html";
 }
 
-function dirijirAQuieroTrabajar(){
+function dirigirAQuieroTrabajar(){
     window.location.href="quieroTrabajar.html";
 }
 
@@ -51,40 +55,7 @@ function cerrarVentana(){
 function IraRegistrar(){
     window.location.href="index.html";
 }
-function mostrar(){
-    const listaDatos = document.getElementById("listaDatos");
-    listaDatos.innerHTML='';
-    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
-    longitud = datosPersonales.length-1;
-    dato = datosPersonales[longitud];
 
-    const nombreItem = document.createElement("li");
-    const documentoItem = document.createElement("li");
-    const estadoItem = document.createElement("li");
-    const celularItem = document.createElement("li");
-    const correoItem = document.createElement("li");
-    const nacimientoItem = document.createElement("li");
-    const residenciaItem = document.createElement("li");
-    const cargoItem = document.createElement("li");
-    
-    nombreItem.textContent = "Nombre: " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
-    documentoItem.textContent = "Documento: "+dato.tipoDocumento+", "+dato.documento;
-    estadoItem.textContent = "Estado Civil: "+dato.estadoCivil;
-    celularItem.textContent = "Número de Celular: "+dato.celular;
-    correoItem.textContent = "Correo Electrónico: "+dato.correo;
-    nacimientoItem.textContent = "Lugar y Fecha de Nacimiento: "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
-    residenciaItem.textContent = "Lugar de Residencia: "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
-    cargoItem.textContent = "Cargo al que aspira: "+dato.cargo;
-        
-    listaDatos.appendChild(nombreItem);
-    listaDatos.appendChild(documentoItem);
-    listaDatos.appendChild(estadoItem);
-    listaDatos.appendChild(celularItem);
-    listaDatos.appendChild(correoItem);
-    listaDatos.appendChild(nacimientoItem);
-    listaDatos.appendChild(residenciaItem);
-    listaDatos.appendChild(cargoItem);    
-}
 function enviar(){
     const nombre = document.getElementById("nombre").value;
     const primerApellido = document.getElementById("primerApellido").value;
@@ -104,14 +75,58 @@ function enviar(){
     const direccion = document.getElementById("direccion").value;
     const barrio = document.getElementById("barrio").value;
     const cargo = document.getElementById("cargo").value;
+    const experiencia1 = document.getElementById("experiencia1").value;
+    const experiencia2 = document.getElementById("experiencia2").value;
+    const experiencia3 = document.getElementById("experiencia3").value;
+    const experiencia4 = document.getElementById("experiencia4").value;
+    const experiencia5 = document.getElementById("experiencia5").value;
 
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
     datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
     paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
-    ciudadResidencia,direccion,barrio,cargo});
+    ciudadResidencia,direccion,barrio,cargo,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
 
     localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
 }
+
+function mostrar(){
+    const listaDatos = document.getElementById("listaDatos");
+    listaDatos.innerHTML='';
+    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
+    longitud = datosPersonales.length-1;
+    dato = datosPersonales[longitud];
+
+    const nombreItem = document.createElement("li");
+    const documentoItem = document.createElement("li");
+    const estadoItem = document.createElement("li");
+    const celularItem = document.createElement("li");
+    const correoItem = document.createElement("li");
+    const nacimientoItem = document.createElement("li");
+    const residenciaItem = document.createElement("li");
+    const cargoItem = document.createElement("li");
+    const experiencias = document.createElement("li");
+
+    nombreItem.textContent = "Nombre: " +dato.nombre+" "+dato.primerApellido+" "+dato.segundoApellido;
+    documentoItem.textContent = "Documento: "+dato.tipoDocumento+", "+dato.documento;
+    estadoItem.textContent = "Estado Civil: "+dato.estadoCivil;
+    celularItem.textContent = "Número de Celular: "+dato.celular;
+    correoItem.textContent = "Correo Electrónico: "+dato.correo;
+    nacimientoItem.textContent = "Lugar y Fecha de Nacimiento: "+dato.paisNacimiento+", "+dato.departamentoNacimiento+", "+dato.ciudadNacimiento+", "+dato.fechaNacimiento;
+    residenciaItem.textContent = "Lugar de Residencia: "+dato.paisResidencia+", "+dato.departamentoResidencia+", "+dato.ciudadResidencia+", "+dato.barrio+", "+dato.direccion;       
+    cargoItem.textContent = "Cargo al que aspira: "+dato.cargo;
+    experiencias.textContent = "Experiencia: "+dato.experiencia1+dato.experiencia2+dato.experiencia3+dato.experiencia4+dato.experiencia5;
+        
+    listaDatos.appendChild(nombreItem);
+    listaDatos.appendChild(documentoItem);
+    listaDatos.appendChild(estadoItem);
+    listaDatos.appendChild(celularItem);
+    listaDatos.appendChild(correoItem);
+    listaDatos.appendChild(nacimientoItem);
+    listaDatos.appendChild(residenciaItem);
+    listaDatos.appendChild(cargoItem);   
+    listaDatos.appendChild(experiencias); 
+}
+
 function perfiles(){
     const listaPerfiles = document.getElementById("listaPerfiles");
     listaPerfiles.innerHTML = "";
