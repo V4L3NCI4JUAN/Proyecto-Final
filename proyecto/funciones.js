@@ -55,8 +55,7 @@ function cerrarVentana(){
 function IraRegistrar(){
     window.location.href="index.html";
 }
-
-function enviar(){
+function validarDatos(){
     const nombre = document.getElementById("nombre").value;
     const primerApellido = document.getElementById("primerApellido").value;
     const segundoApellido = document.getElementById("segundoApellido").value;
@@ -81,7 +80,8 @@ function enviar(){
     const experiencia3 = document.getElementById("experiencia3").value;
     const experiencia4 = document.getElementById("experiencia4").value;
     const experiencia5 = document.getElementById("experiencia5").value;
-    
+}
+function enviar(){
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
     datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
     paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
