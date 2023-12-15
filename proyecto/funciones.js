@@ -158,6 +158,7 @@ function perfiles(){
     
     datosPersonales.forEach((elemento) =>{
         const nombreItem = document.createElement("button");
+        nombreItem.onclick = desplegarPerfiles;
         const documentoItem = document.createElement("li");
         const estadoItem = document.createElement("li");
         const celularItem = document.createElement("li");
@@ -201,4 +202,11 @@ function perfiles(){
         listaPerfiles.appendChild(fotoItem)   
         listaPerfiles.appendChild(experiencias); 
     })   
+}
+function desplegarPerfiles(){
+    if (document.getElementById("listaPerfiles").style.display=='none'){
+        document.getElementById("listaPerfiles").style.display='block';
+    }else{
+        document.getElementById("listaPerfiles").style.display='none';
+    }
 }
