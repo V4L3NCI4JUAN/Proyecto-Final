@@ -80,7 +80,7 @@ function enviar(){
     const experiencia3 = document.getElementById("experiencia3").value;
     const experiencia4 = document.getElementById("experiencia4").value;
     const experiencia5 = document.getElementById("experiencia5").value;
-
+    
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
     datosPersonales.push({nombre, primerApellido,segundoApellido,tipoDocumento,documento,estadoCivil,celular,correo,
     paisNacimiento,departamentoNacimiento,ciudadNacimiento,fechaNacimiento,paisResidencia,departamentoResidencia,
