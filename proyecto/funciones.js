@@ -104,9 +104,6 @@ function validarDatos(){
     }
 }
 
-    
-    
-
 function mostrar(){
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
