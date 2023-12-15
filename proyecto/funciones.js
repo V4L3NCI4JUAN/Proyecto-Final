@@ -6,7 +6,7 @@ function GestionHumana(){
     let emailEmpresa = document.getElementById('email_empresa').value;
     let passwordEmpresa = document.getElementById('password_empresa').value;
 
-    if(emailEmpresa === 'villafloraempresa@gmail.com' && passwordEmpresa  === 'gestionhumana123'){
+    if(emailEmpresa === 'juan' && passwordEmpresa  === 'juan'){
         window.location.href="perfilGestionHumana.html"
     } else{
         alert('La direccion de correo o la contraseña son incorrectos. Por favor vuelva a intentarlo.')
