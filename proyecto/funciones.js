@@ -148,7 +148,6 @@ function mostrar(){
     listaDatos.appendChild(fotoItem)   
     listaDatos.appendChild(experiencias); 
 }
-
 function perfiles(){
     const acordionContainer = document.getElementById("acordionContainer");
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
