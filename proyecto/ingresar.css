@@ -16,18 +16,18 @@ img{
     width: 100% ;
 }
 .slogan{
-    background-color: rgba(255, 105, 180, 0.3);
+    background-color: rgba(243, 123, 112, 0.3);
     color: white;
     border-radius: 100px;
     width: auto;
     margin: 0px 100px 0px 100px;
     padding: 10px;
-    border-bottom: solid 2px #ff69b4;
+    border-bottom: solid 2px rgb(243, 123, 112);
 }
 .sing{
     margin-top: 20px;
     padding: 20px 50px;
-    background-color: rgba(255, 105, 180);
+    background-color: #f37b70;
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,14 +36,14 @@ img{
 .sing1{
     margin-top: 20px;
     padding: 20px 80px;
-    background-color: rgba(255, 105, 180);
+    background-color: rgb(243, 123, 112);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .sing:hover, .sing1:hover, .continue:hover{
-    background-color: rgba(255, 192, 203, 0.6);
+    background-color: rgba(243, 123, 112, 0.6);
     color: #efb4d2;
 }.tx1{
     font-size: small;
@@ -54,19 +54,20 @@ img{
     margin-right: 100px;
     cursor: pointer;
     background: none;
-    color: #ff69b4;
+    color: rgba(8243, 123, 112);
     border: none;
     padding: 0px;
 }
 .tx2:hover{
     padding: 0px;
-    color: #ff69b4;
+    color: rgba(8243, 123, 112);
     font-size: 12px;
     margin-left: 99px;
     margin-right: 99px;
 }
 p{
-    color: #ff69b4;
+    color: rgba(243, 123, 112);    
+
 }
 h2{
     color: white;
@@ -78,15 +79,16 @@ h2{
     padding: 12px 10px;
     width: 90%;
     border: none;
-    border-bottom: solid 2px #ff69b4;    
-    background-color: rgba(100, 27, 64, 0.3);
+    border-bottom: solid 2px rgba(243, 123, 112);    
+    background-color: rgba(66, 27, 21, 0.3);
     outline: none;
     color: white;
 }
 .ipt:focus{
-    border-bottom: 2px rgba(208, 120, 164, 0.3) solid;
+    border-bottom: 2px rgba(243, 123, 112 ,0.3) solid;
     border-radius: 5px;
-    background-color: rgba(61, 18, 39, 0.3);
+    background-color: rgba(170, 80, 72, 0.3);
+    transition: all 0.2s;
 }
 ::placeholder{
     color: rgba(199, 186, 193);
@@ -95,9 +97,9 @@ h2{
     margin: 10px    ;
     text-align: left;
     padding: 30px 10px 0px 30px;
-    background-color: rgba(255, 105, 180, 0.3);
+    background-color: rgba(179, 90, 82, 0.3);
     color: white;
-    border-ra   dius: 10px;
+    border-radius: 10px;
 }
 .continue{
     width: auto;
@@ -107,7 +109,7 @@ h2{
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(255, 105, 180);
+    background-color: rgba(243, 123, 112, 0.6);
 }
 .btn2{
     text-align: center;
