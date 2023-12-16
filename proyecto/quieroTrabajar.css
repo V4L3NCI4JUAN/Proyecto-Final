@@ -125,7 +125,7 @@ h3{
     margin-bottom: 10px;
 }
 .div-foto{
-    text-align: right;
+    text-align: center;
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: #fff;
@@ -134,9 +134,6 @@ h3{
 }
 .div-foto input{
     margin: 10px;
-    width: 15%;
-    height: 150px;
-    border: #898080 solid 1px;
     border-radius: 5px;
 }
 .ipt1{
@@ -146,10 +143,10 @@ h3{
     text-align: left;
     border: #f48e87 solid 1px;
 }
-.ipt1:hover, .ipt2:hover, .ipt3:hover, .ipt4:hover{
+.ipt1:hover, .ipt2:hover, .ipt3:hover, .ipt4:hover, .foto:hover{
     background-color: rgb(244, 141, 134, 0.2);
 }
-.ipt1:focus-visible, .ipt2:focus-visible, .ipt3:focus-visible, .ipt4:focus-visible{
+.ipt1:focus-visible, .ipt2:focus-visible, .ipt3:focus-visible, .ipt4:focus-visible, .foto:focus-visible{
     background-color: rgb(244, 141, 134, 0.2);
     outline: none;
     border: 2px solid #f48e87;
