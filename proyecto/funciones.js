@@ -155,10 +155,10 @@ function perfiles(){
 
     datosPersonales.forEach(function(elemento,index){
         const acordionItem = document.createElement("div");
-        acordionItem.className = "acordion-item";
+        acordionItem.className = "acordionItem";
 
         const acordionHeader = document.createElement("div");
-        acordionHeader.className = "acordion-header";
+        acordionHeader.className = "acordionHeader";
         acordionHeader.textContent = `${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}`;
         
         const acordionContent = document.createElement("div");
@@ -177,7 +177,7 @@ function perfiles(){
         <p>Experiencia Laboral: ${elemento.experiencia1} ${elemento.experiencia2} ${elemento.experiencia3} ${elemento.experiencia4} ${elemento.experiencia5}</p>`
 
         acordionHeader.addEventListener('click', function(){
-            acordionContent.style.display = (acordionContent.style.display=="none")?"none":"block";
+            acordionContent.style.display = (acordionContent.style.display=="block")?"none":"block";
         })
         acordionItem.appendChild(acordionHeader);
         acordionItem.appendChild(acordionContent);

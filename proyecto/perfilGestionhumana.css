@@ -1,6 +1,48 @@
-#botonPerfiles button{
-  display: block;
-  padding: 10px 10px;
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.Contenedor{
+  z-index: 2;
+  display: flex;
+  border-color: solid 2px rgb(5, 8, 1, 0.6);
+  background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0));
+  position: fixed;
   width: 100%;
+  border: none;
+  border-bottom:#000000 solid 2px;
+  box-shadow:  0 5px 7.9px 3px #000000;
+}
+header{
+  height: 120px;
+  background-color: none;
+}
+.logo{
+  width: 14%;
+  margin: 2px;
+  margin-bottom: none;
+  cursor: pointer;
+}
 
+.acordion {
+  max-width: 400px;
+  margin: 20px auto;
+}
+.acordionItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.acordionHeader {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+.accordionContent {
+  padding: 10px;
+  display: none;
 }
