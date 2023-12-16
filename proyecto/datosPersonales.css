@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     text-align: justify;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
+       
 }
 header{
     height: 120px;
@@ -25,9 +25,65 @@ header{
     border-bottom:#000000 solid 2px;
     box-shadow:  0 5px 7.9px 3px #000000;
 }
-.contenedor{
-    position: relative;;
+
+
+
+
+
+
+
+.btn1{
+    background: none;
+    color: #ffff;
+    border: none;
+    position:relative;
+    transform: translateY(20px) translateX(1064px);
+    border-left: 1px #ffff solid;
+    padding-left: 5px;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
 }
+.btn2{
+    background: none;
+    color: #ffff;
+    border: none;
+    position:relative;
+    transform: translateY(20px) translateX(1040px);
+    /*border-left: 1px #ffff solid;*/
+    padding-left: 5px;
+    padding: 10px 26.3px;
+    text-align: center;
+    z-index: 2;
+}
+.btn1{
+   /* ;
+    transition: 0.3s ;
+    border-left: #ffff 1px solid;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translateY(20px) translateX(1064px);*/
+    padding: 16px;
+    font-size: 12px;
+    opacity: 0.7;
+    background-color: #984f5d 
+}
+.btn2:hover{
+    background-color: #984f5d ;
+    transition: 0.3s ;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translateY(px) translateX(1041px); 
+    padding: 16px 29.3px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+
 h1{
     text-align: center;
     background-color: #f48e87;

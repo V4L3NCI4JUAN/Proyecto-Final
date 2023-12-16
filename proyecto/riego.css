@@ -18,6 +18,8 @@ body{
     background-size: 100%;
 }
 
+
+
 .logo{
     width: 14%;
     margin: 2px;
@@ -29,10 +31,21 @@ body{
     color: #ffff;
     border: none;
     position:relative;
-    transform: translateY(20px) translateX(965px);
-    border-left: 1px #ffff solid;
+    transform: translateY(20px) translateX(870px);
+    /*border-left: 1px #ffff solid;*/
     padding-left: 5px;
     padding: 10px;
+    text-align: center;
+}
+.btn2{
+    background: none;
+    color: #ffff;
+    border: none;
+    position:relative;
+    transform: translateY(20px) translateX(850px);
+    /*border-left: 1px #ffff solid;*/
+    padding-left: 5px;
+    padding: 10px 26.3px;
     text-align: center;
 }
 .btn1:hover{
@@ -40,8 +53,18 @@ body{
     transition: 0.3s ;
     cursor: pointer;
     color: #ffffff;
-    transform: translateY(15px) translateX(964px); 
+    transform: translateY(15px) translateX(869px); 
     padding: 16px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.btn2:hover{
+    background-color: #984f5d ;
+    transition: 0.3s ;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translateY(15px) translateX(849px); 
+    padding: 16px 29.3px;
     font-size: 12px;
     opacity: 0.7;
 }
