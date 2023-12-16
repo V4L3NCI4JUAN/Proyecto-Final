@@ -150,63 +150,37 @@ function mostrar(){
 }
 
 function perfiles(){
-    const listaPerfiles = document.getElementById("listaPerfiles");
-    listaPerfiles.innerHTML = "";
+    const acordionContainer = document.getElementById("acordionContainer");
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
 
-    datosPersonales.forEach((elemento) =>{
-        const nombreItem = document.createElement("button");
-        nombreItem.onclick = desplegarPerfiles;  
-        const documentoItem = document.createElement("li");
-        const estadoItem = document.createElement("li");
-        const celularItem = document.createElement("li");
-        const correoItem = document.createElement("li");
-        const nacimientoItem = document.createElement("li");
-        const fechaNacimientoItem = document.createElement("li");
-        const residenciaItem = document.createElement("li");
-        const barrioItem = document.createElement("li");
-        const cargoItem = document.createElement("li");
-        const fotoItem = document.createElement("li");
-        const experiencias = document.createElement("li");
-        elemento.experiencia1 = elemento.experiencia1.substring(12);
-        elemento.experiencia2 = elemento.experiencia2.substring(12);
-        elemento.experiencia3 = elemento.experiencia3.substring(12);
-        elemento.experiencia4 = elemento.experiencia4.substring(12);
-        elemento.experiencia5 = elemento.experiencia5.substring(12);
-        elemento.foto = elemento.foto.substring(12);
+    datosPersonales.forEach(function(elemento,index){
+        const acordionItem = document.createElement("div");
+        acordionItem.className = "acordion-item";
 
-        nombreItem.textContent = `${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}`;
-        documentoItem.textContent = `Documento: ${elemento.tipoDocumento}, ${elemento.documento}`;
-        estadoItem.textContent = `Estado Civil: ${elemento.estadoCivil}`;
-        celularItem.textContent = `Número de Celular: ${elemento.celular}`;
-        correoItem.textContent = `Correo Electrónico: ${elemento.correo}`;
-        nacimientoItem.textContent = `Lugar de Nacimiento: ${elemento.paisNacimiento} - ${elemento.departamentoNacimiento} - ${elemento.ciudadNacimiento}`;
-        fechaNacimientoItem.textContent = `Fecha de Nacimiento: ${elemento.fechaNacimiento}`;
-        residenciaItem.textContent = `Lugar de Residencia: ${elemento.paisResidencia} - ${elemento.departamentoResidencia} - ${elemento.ciudadResidencia}`;
-        barrioItem.textContent = `Dirección: ${elemento.direccion} (${elemento.barrio})`;
-        fotoItem.textContent = `Foto: ${elemento.foto}`;
-        cargoItem.textContent = `Cargo al que aspira: ${elemento.cargo}`;
-        experiencias.textContent = `Experiencia Laboral: ${elemento.experiencia1} ${elemento.experiencia2} ${elemento.experiencia3} ${elemento.experiencia4} ${elemento.experiencia5}`;
+        const acordionHeader = document.createElement("div");
+        acordionHeader.className = "acordion-header";
+        acordionHeader.textContent = `${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}`;
+        
+        const acordionContent = document.createElement("div");
+        acordionContent.className="acordionContent";
+        acordionContent.innerHTML=`
+        <p>Documento: ${elemento.tipoDocumento}, ${elemento.documento}</p>
+        <p>Estado Civil: ${elemento.estadoCivil}</p>
+        <p>Número de Celular: ${elemento.celular}</p>
+        <p>Correo Electrónico: ${elemento.correo}</p>
+        <p>Lugar de Nacimiento: ${elemento.paisNacimiento}, ${elemento.departamentoNacimiento}, ${elemento.ciudadNacimiento}</p>
+        <p>Fecha de Nacimiento: ${elemento.fechaNacimiento}</p>
+        <p>Lugar de Residencia: ${elemento.paisResidencia}, ${elemento.departamentoResidencia}, ${elemento.ciudadResidencia}</p>
+        <p>Dirección: ${elemento.direccion} (${elemento.barrio}</p>
+        <p>Foto: ${elemento.foto}</p>
+        <p>Cargo al que aspira: ${elemento.cargo}</p>
+        <p>Experiencia Laboral: ${elemento.experiencia1} ${elemento.experiencia2} ${elemento.experiencia3} ${elemento.experiencia4} ${elemento.experiencia5}</p>`
 
-        botonPerfiles.appendChild(nombreItem);
-        listaPerfiles.appendChild(documentoItem);
-        listaPerfiles.appendChild(estadoItem);
-        listaPerfiles.appendChild(celularItem);
-        listaPerfiles.appendChild(correoItem);
-        listaPerfiles.appendChild(nacimientoItem);
-        listaPerfiles.appendChild(fechaNacimientoItem);
-        listaPerfiles.appendChild(residenciaItem);
-        listaPerfiles.appendChild(barrioItem);
-        listaPerfiles.appendChild(cargoItem);
-        listaPerfiles.appendChild(fotoItem)   
-        listaPerfiles.appendChild(experiencias); 
-    })   
-}
-function desplegarPerfiles(){
-    if (document.getElementById("listaPerfiles").style.display=='none'){
-        document.getElementById("listaPerfiles").style.display='block';
-    }else{
-        document.getElementById("listaPerfiles").style.display='none';
-    }
-
+        acordionHeader.addEventListener('click', function(){
+            acordionContent.style.display = (acordionContent.style.display=="none")?"none":"block";
+        })
+        acordionItem.appendChild(acordionHeader);
+        acordionItem.appendChild(acordionContent);
+        acordionContainer.appendChild(acordionItem);
+    })  
 }
