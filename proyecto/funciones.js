@@ -87,11 +87,7 @@ function validarDatos(){
         alert("Seleccione su estado civil")
     }else if (cargo=="Cargo"){
         alert("Seleccione el cargo al que se desea postular")
-    }else if (nombre==""||primerApellido==""||segundoApellido==""||documento==""||celular==""||correo==""||barrio==""){
-        alert ("Faltan datos por llenar")
-    }else if (paisNacimiento==""||paisResidencia==""||ciudadNacimiento==""||ciudadResidencia==""||departamentoNacimiento==""||departamentoResidencia==""){
-        alert ("Faltan datos por llenar")
-    }else if (direccion==""||fechaNacimiento==""||foto==""){
+    }else if (nombre==""||primerApellido==""||segundoApellido==""||documento==""||celular==""||correo==""||barrio==""||paisNacimiento==""||paisResidencia==""||ciudadNacimiento==""||ciudadResidencia==""||departamentoNacimiento==""||departamentoResidencia==""||direccion==""||fechaNacimiento==""||foto==""){
         alert ("Faltan datos por llenar")
     }else{
         const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
@@ -100,10 +96,12 @@ function validarDatos(){
         ciudadResidencia,direccion,barrio,cargo,foto,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
         
         localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
-        window.location.href='datosPersonales.html';
+        alert("Datos enviados con éxito");
     }
 }
-
+function dirigirADatosPersonales(){
+    window.location.href="datosPersonales.html";
+}
 function mostrar(){
     const listaDatos = document.getElementById("listaDatos");
     listaDatos.innerHTML='';
