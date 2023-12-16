@@ -27,24 +27,31 @@ header{
 }
 h1,h2{
   text-align: center;
-}
+} 
 .acordion {
-  max-width: 400px;
+  max-width: 700px;
   margin: 20px auto;
+  
 }
 .acordionItem {
   background-color: #fff;
   border: 1px solid #ddd;
   margin-bottom: 5px;
   overflow: hidden;
+  border-radius: 5px;
+ 
 }
+
 .acordionHeader {
-    text-align: center;
-    background-color: #f48e87;
-    color: #ffff;
-    cursor: pointer;
+  text-align: center;
+  background-color: #f48e87;
+  color: #ffff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  
 }
 .acordionContent {
   padding: 10px;
   display: none;
-}
+}  
