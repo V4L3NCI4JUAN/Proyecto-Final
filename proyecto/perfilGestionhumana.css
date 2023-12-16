@@ -25,7 +25,9 @@ header{
   margin-bottom: none;
   cursor: pointer;
 }
-
+h1,h2{
+  text-align: center;
+}
 .acordion {
   max-width: 400px;
   margin: 20px auto;
@@ -37,12 +39,12 @@ header{
   overflow: hidden;
 }
 .acordionHeader {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
+    text-align: center;
+    background-color: #f48e87;
+    color: #ffff;
+    cursor: pointer;
 }
-.accordionContent {
+.acordionContent {
   padding: 10px;
   display: none;
 }

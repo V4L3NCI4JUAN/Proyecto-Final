@@ -154,6 +154,12 @@ function perfiles(){
     const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
 
     datosPersonales.forEach(function(elemento,index){
+        elemento.experiencia1 = elemento.experiencia1.substring(12);
+        elemento.experiencia2 = elemento.experiencia2.substring(12);
+        elemento.experiencia3 = elemento.experiencia3.substring(12);
+        elemento.experiencia4 = elemento.experiencia4.substring(12);
+        elemento.experiencia5 = elemento.experiencia5.substring(12);
+        elemento.foto = elemento.foto.substring(12);
         const acordionItem = document.createElement("div");
         acordionItem.className = "acordionItem";
 
@@ -171,13 +177,13 @@ function perfiles(){
         <p>Lugar de Nacimiento: ${elemento.paisNacimiento}, ${elemento.departamentoNacimiento}, ${elemento.ciudadNacimiento}</p>
         <p>Fecha de Nacimiento: ${elemento.fechaNacimiento}</p>
         <p>Lugar de Residencia: ${elemento.paisResidencia}, ${elemento.departamentoResidencia}, ${elemento.ciudadResidencia}</p>
-        <p>Dirección: ${elemento.direccion} (${elemento.barrio}</p>
+        <p>Dirección: ${elemento.direccion} (${elemento.barrio})</p>
         <p>Foto: ${elemento.foto}</p>
         <p>Cargo al que aspira: ${elemento.cargo}</p>
         <p>Experiencia Laboral: ${elemento.experiencia1} ${elemento.experiencia2} ${elemento.experiencia3} ${elemento.experiencia4} ${elemento.experiencia5}</p>`
 
         acordionHeader.addEventListener('click', function(){
-            acordionContent.style.display = (acordionContent.style.display=="block")?"none":"block";
+            acordionContent.style.display = (acordionContent.style.display=="none")?"block":"none";
         })
         acordionItem.appendChild(acordionHeader);
         acordionItem.appendChild(acordionContent);
