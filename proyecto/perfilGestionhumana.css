@@ -1,4 +1,6 @@
 #botonPerfiles button{
   display: block;
-  padding: 100px;
+  padding: 10px 10px;
+  width: 100%;
+
 }
