@@ -100,7 +100,7 @@ function validarDatos(){
         ciudadResidencia,direccion,barrio,cargo,foto,experiencia1,experiencia2,experiencia3,experiencia4,experiencia5});
         
         localStorage.setItem("datosPersonales", JSON.stringify(datosPersonales));
-        window.location.href="datosPersonales.html";
+        window.location.href='datosPersonales.html';
     }
 }
 
@@ -154,10 +154,11 @@ function mostrar(){
 function perfiles(){
     const listaPerfiles = document.getElementById("listaPerfiles");
     listaPerfiles.innerHTML = "";
-    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];  
-    
+    const datosPersonales = JSON.parse(localStorage.getItem("datosPersonales"))||[];
+
     datosPersonales.forEach((elemento) =>{
         const nombreItem = document.createElement("button");
+        nombreItem.onclick = desplegarPerfiles;  
         const documentoItem = document.createElement("li");
         const estadoItem = document.createElement("li");
         const celularItem = document.createElement("li");
@@ -174,6 +175,7 @@ function perfiles(){
         elemento.experiencia3 = elemento.experiencia3.substring(12);
         elemento.experiencia4 = elemento.experiencia4.substring(12);
         elemento.experiencia5 = elemento.experiencia5.substring(12);
+        elemento.foto = elemento.foto.substring(12);
 
         nombreItem.textContent = `${elemento.nombre} ${elemento.primerApellido} ${elemento.segundoApellido}`;
         documentoItem.textContent = `Documento: ${elemento.tipoDocumento}, ${elemento.documento}`;
@@ -201,5 +203,12 @@ function perfiles(){
         listaPerfiles.appendChild(fotoItem)   
         listaPerfiles.appendChild(experiencias); 
     })   
+}
+function desplegarPerfiles(){
+    if (document.getElementById("listaPerfiles").style.display=='none'){
+        document.getElementById("listaPerfiles").style.display='block';
+    }else{
+        document.getElementById("listaPerfiles").style.display='none';
+    }
 
 }
