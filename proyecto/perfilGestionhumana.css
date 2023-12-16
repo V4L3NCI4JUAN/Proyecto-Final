@@ -1,8 +1,4 @@
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 9,
-  'opsz' 24
+#botonPerfiles button{
+  display: block;
+  padding: 100px;
 }
