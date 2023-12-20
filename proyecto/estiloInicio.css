@@ -40,7 +40,7 @@ body{
     color: #ffff;
     border: none;
     position:relative;
-    transform: translateY(20px) translateX(870px);
+    transform: translateY(20px) translateX(860px);
     /*border-left: 1px #ffff solid;*/
     padding-left: 5px;
     padding: 10px;
@@ -62,7 +62,7 @@ body{
     transition: 0.3s ;
     cursor: pointer;
     color: #ffffff;
-    transform: translateY(15px) translateX(869px); 
+    transform: translateY(15px) translateX(861px); 
     padding: 16px;
     font-size: 12px;
     opacity: 0.7;
