@@ -1,0 +1,69 @@
+@media screen and (max-width: 360px){
+    img{
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    h2{
+        font-size: larger;
+        margin-top: 50px;
+    }
+    .sing:hover, .sing1:hover, .continue:hover{
+        background-color: rgba(243, 123, 112, 0.6);
+        color: #efb4d2;
+    }
+    .slogan{
+        color: white;
+        border-radius: 100px;
+        width: auto;
+        margin: auto 10px;
+        font-size: xx-small;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .sing{
+        margin-top: 5px;
+    }
+    .contenido2{
+        width: 86%;
+        padding: 0;
+    }
+    .registrar{
+        margin: 2px;
+        padding: 20px 15px;
+    }
+    .ipt{
+        width: 95%;
+        padding: 5px;
+    }
+    .continue{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(243, 123, 112);
+    }
+    .tx2{
+        margin-left: 50px;
+        margin-right: 50px;
+        cursor: pointer;
+        background: none;
+        color: rgba(8243, 123, 112);
+        border: none;
+        padding: 0px;
+    }
+    .tx2:hover{
+        padding: 0px;
+        color: rgba(8243, 123, 112);
+        font-size: 12px;
+        margin-left: 49px;
+        margin-right: 49px;
+    }
+}

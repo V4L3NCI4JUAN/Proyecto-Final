@@ -1,5 +1,7 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -10,10 +12,6 @@ body{
 }
 img{
     width: 30%;
-}
-.contenido2{
-    background-color: none;
-    width: 100% ;
 }
 .slogan{
     background-color: rgba(243, 123, 112, 0.3);
@@ -45,7 +43,8 @@ img{
 .sing:hover, .sing1:hover, .continue:hover{
     background-color: rgba(243, 123, 112, 0.6);
     color: #efb4d2;
-}.tx1{
+}
+.tx1{
     font-size: small;
     margin: 0;
 }
@@ -58,12 +57,14 @@ img{
     border: none;
     padding: 0px;
 }
-.tx2:hover{
-    padding: 0px;
+.tx2{
+    margin-left: 100px;
+    margin-right: 100px;
+    cursor: pointer;
+    background: none;
     color: rgba(8243, 123, 112);
-    font-size: 12px;
-    margin-left: 99px;
-    margin-right: 99px;
+    border: none;
+    padding: 0px;
 }
 p{
     color: rgba(243, 123, 112);    
@@ -74,6 +75,13 @@ h2{
 }
 
 /*contenido2 A partir de aquí*/
+
+.contenido2{
+    background-color: none;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
 .ipt{   
     margin: 1px 0px 0px 0px ;
     padding: 12px 10px;
@@ -94,7 +102,7 @@ h2{
     color: rgba(199, 186, 193);
 }
 .registrar{
-    margin: 10px    ;
+    margin: 10px;
     text-align: left;
     padding: 30px 10px 0px 30px;
     background-color: rgba(179, 90, 82, 0.3);
@@ -109,44 +117,10 @@ h2{
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(243, 123, 112, 0.6);
+    background-color: rgb(243, 123, 112);
 }
 .btn2{
     text-align: center;
-}
-.contenido2{
-    width: 40%;
-    margin: 20px 400px 0px 400px;
-    text-align: center;
+    width: 95%;
 }
 
-@media screen and (max-width: 800px){
-    .slogan{
-        font-size: 12px;
-        width: 89%;
-        padding: 20px;
-        margin: 0px;
-        margin-top: 20px;
-    }
-    .tx2{
-        font-size: medium;
-    }
-    
-}
-
-@media screen and (max-width: 1200px){
-    .contenido3{
-        width: 89%;
-        padding: 0px 0px 0px 30px;
-        margin: 0px;
-        margin-top: 20px;
-    }
-    .continue{
-        width: 50%;
-        margin: 50px;
-        padding: 15px;
-    }
-    .ipt{
-        width: 90% ;
-    }
-}

@@ -1,0 +1,193 @@
+@media screen and (max-width: 360px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-image: linear-gradient(to top, rgba(5, 8, 1, 0.8), rgb(0, 0, 0)),  url('https://www.kukyflor.com/blog/wp-content/uploads/2015/10/Depositphotos_2376830_l-2015.jpg');
+        width: 100%;
+        height: 665px;
+        background-repeat: no-repeat;
+        background-size: 1400px;
+        border: 1px solid white;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+       
+    }
+    .logotipo{
+        width: 60%;
+        text-align: center;
+        transform: translateY(155%);
+        border-bottom: none ;
+    }
+    .eslogan h1{
+        transform: translateY(230%) translateX(5%);
+        text-align: center;
+        font-size: x-large;
+        color: #fac3ce;
+        border-top: ridge 1px  #fac3ce;
+        width: 90%;
+        padding-top: 20px;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 30%;
+        margin-top: 5px;
+        margin-bottom: none;
+        cursor: pointer;
+    }
+    .logo2{
+        width: 100%;
+    
+    }
+    .btn1{
+        background: none;
+        color: #ffff;
+        border: none;
+        position:relative;
+        transform: translateY(10px) translateX(9px);
+        /*border-left: 1px #ffff solid;*/
+        padding-left: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    .btn2{
+        background: none;
+        color: #ffff;
+        border: none;
+        position:relative;
+        transform: translateY(10px) translateX(8px);
+        /*border-left: 1px #ffff solid;*/
+        padding-left: 5px;
+        padding: 10px 26.3px;
+        text-align: center;
+    }
+    .btn1:hover{
+        background-color: #984f5d ;
+        transition: 0.3s ;
+        cursor: pointer;
+        color: #ffffff;
+        transform: translateY(5px) translateX(8px); 
+        padding: 16px;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+    .btn2:hover{
+        background-color: #984f5d ;
+        transition: 0.3s ;
+        cursor: pointer;
+        color: #ffffff;
+        transform: translateY(5px) translateX(7px); 
+        padding: 16px 29.3px;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+    .tx1{
+        text-align: left;
+        font-size: 15px;
+        width: 80%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+      
+    }
+    .tx2{
+        width: 80%;
+        font-size: 20px;
+        margin-top: 2pc ;
+    }
+
+    .Contenedor{
+        z-index: 2;
+        display: flex;
+        border-color: solid 2px rgb(5, 8, 1, 0.6);
+        position: fixed;
+        width: 100%;
+        border: none;
+        border-bottom:#000000 solid 2px;
+        box-shadow:  0 5px 7.9px 3px #000000;
+    }
+    
+    /*contenedor2*/
+    .contenedor2{
+        margin-top: 30px;
+        display: block;
+        padding: 1px;
+        border-bottom:#ffff solid 2px;
+        box-shadow: 0 -10px 7.9px -3px #ffff;
+    }
+    .area1, .area2, .area3, .area4, .area5, .area6{
+        width: 99%;
+        text-align: center;
+        padding: 0px;
+        border-left: 1px #ffff solid;
+        padding-left: 0px;
+        padding: 1px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .area1:hover, .area2:hover, .area3:hover, .area4:hover, .area5:hover, .area6:hover{
+        background-color: #ceb8bc ;
+        border-radius: 5px;
+        transition: 0.3s ;
+        color: #ffff;
+        padding: 1px;
+        font-size: 15px;
+        opacity: 0.7;
+        text-align: center;
+    }
+    form{
+        width: 100%;
+    }
+    .name-Area{
+        background-color: #fac3ce;
+        padding: 0px;
+        margin: 2px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    h3{
+        color: #000000;
+        text-align: center;
+        margin: none; 
+    }
+    .logo1{
+        width: 100%;
+        height: 200px;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .info1{
+        background-color: #ffff;
+        margin-top: 0px;
+        padding: 0px;
+        border-radius: 5px;
+        width: 100%;
+       
+        font-size: large;
+        line-height: 33px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    .info{
+        width: 91%;
+        margin: 1pc;
+        margin-right: 1pc;
+    }
+    .info p{
+        text-align: justify;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .imagen1{ 
+        margin: 1pc;
+        width: 91%; 
+        height: 300px;
+    } 
+    
+    
+}

@@ -6,6 +6,7 @@
     <title>VILLAFLORA | INICIO</title>
     <link rel="icon" href="LogoPestaña.ico">
     <link rel="stylesheet" href="estiloInicio.css">
+    <link rel="stylesheet" href="estiloInicioResponsive.css">
 </head>
 <header>
     <div class="Contenedor" style="display: flex; ">
@@ -22,79 +23,64 @@
     </div>
     
     <div class="logotipo">
-       
-        <img src="LogoDefinitivo1.png" alt="">
+        <img class="logo2" src="LogoDefinitivo1.png" alt="">
     </div>
     <div class="eslogan">
         <h1>Conectando culturas a través de las flores</h1>
     </div>
 </header>
 <body>
-
-    <div id="Nombre"></div>
+    
 
     <div class="tx1">
         <h2>Areas de Trabajo</h2>
     </div>
     
     <div class="contenedor2">
-        <form action="labores.html">
-            <div class="area1">
-        
-                <div class="name-Area">
-                    <img class="logo1" src="https://www.treetop.cl/wp-content/uploads/2021/08/preparando-la-tierra-para-el-huerto.jpg" alt="">
-                    <button class="titulos">LABORES</button>
-                </div>
+        <div onclick="Dirigir_Area('Labores')" class="area1">
+            <div class="name-Area">
+                <img class="logo1" src="https://www.treetop.cl/wp-content/uploads/2021/08/preparando-la-tierra-para-el-huerto.jpg" alt="">
+                <button class="titulos">LABORES</button>
             </div>
-        </form>
+        </div>
 
-        <form action="riego.html">
-            <div class="area2">
-                <div class="name-Area">
-                    <img class="logo1" src="https://hidroponia.mx/wp-content/uploads/2016/07/sistema_de_riego_por_goteo.jpg" alt="">
-                    <button class="titulos">RIEGO</button>
-                </div>
+        <div onclick="Dirigir_Area('Riego')" class="area2">
+            <div class="name-Area">
+                <img class="logo1" src="https://hidroponia.mx/wp-content/uploads/2016/07/sistema_de_riego_por_goteo.jpg" alt="">
+                <button class="titulos">RIEGO</button>
             </div>
-        </form>
+        </div>
 
-        <form action="mantenimiento.html">
-            <div class="area3">
+        <div onclick="Dirigir_Area('Mantenimiento')" class="area3">
 
-                <div class="name-Area">
-                    <img class="logo1" src="https://maquinariadejardineria.net/blog/wp-content/uploads/2017/05/mantenimiento-de-la-maquinaria.jpg" alt="">
-                    <button class="titulos">MANTENIMIENTO</button>
-                </div>
+            <div class="name-Area">
+                <img class="logo1" src="https://maquinariadejardineria.net/blog/wp-content/uploads/2017/05/mantenimiento-de-la-maquinaria.jpg" alt="">
+                <button class="titulos">MANTENIMIENTO</button>
             </div>
-        </form>
+        </div>
 
-        <form action="fitosanidad.html">
-            <div class="area4">
-                <div class="name-Area">
-                    <img class="logo1" src="Fitosanidad1.jpg" alt="">
-                    <button class="titulos">
-                        FITOSANIDAD
-                    </button>
-                </div>
+        <div onclick="Dirigir_Area('Fitosanidad')" class="area4">
+            <div class="name-Area">
+                <img class="logo1" src="Fitosanidad1.jpg" alt="">
+                <button class="titulos">
+                    FITOSANIDAD
+                </button>
             </div>
-        </form>
+        </div>
 
-        <form action="corte.html">
-            <div class="area5">
-                <div class="name-Area">
-                    <img class="logo1" src="https://blog.homedepot.com.mx/wp-content/uploads/2015/03/cortar-flores.jpg" alt="">
-                    <button class="titulos">CORTE</button>
-                </div>
+        <div onclick="Dirigir_Area('Corte')" class="area5">
+            <div class="name-Area">
+                <img class="logo1" src="https://blog.homedepot.com.mx/wp-content/uploads/2015/03/cortar-flores.jpg" alt="">
+                <button class="titulos">CORTE</button>
             </div>
-        </form>
+        </div>
 
-        <form action="poscosecha.html">
-            <div class="area6">
-                <div class="name-Area">
-                    <img class="logo1" src="Poscosecha4.jpg" alt="">
-                    <button class="titulos">POSTCOSECHA</button>
-                </div>
+        <div onclick="Dirigir_Area('Poscosecha')" class="area6">
+            <div class="name-Area">
+                <img class="logo1" src="Poscosecha4.jpg" alt="">
+                <button class="titulos">POSTCOSECHA</button>
             </div>
-        </form>
+        </div>
     </div>
 
     <div class="info1">
@@ -103,10 +89,13 @@
             <p>La empresa es especializada en la producción de flores de cortes y se encuentra ubicada es San Juan, vereda del municipio de La Unión. Su horario laboral abarca de Lunes a Sábado, y la empresa ofrece contratos fijos a sus empledos. ademas, proporciona transporte desde La Unión, La Ceja y Mesopotamia, facilitando así el desplazamiento de su personal hacia el lugar de trabajo. Esta disposición de transtporte beneficia a los empleados al fortalecer un medio para llegar y regresar de manera comoda y segura a sus hogares.</p>
     
         </div>
-        <div style="width: 50%;">
-            <img style="margin-top: 2pc; width: 95%; height: 400px;" src="ImagenEmpresa.jpg" alt="">
+        <div class="imagen">
+            <img class="imagen1" src="ImagenEmpresa.jpg" alt="">
         </div>
     </div>
+    <style>
+        
+    </style>
     
     <script src="funciones.js"></script>
 </body>

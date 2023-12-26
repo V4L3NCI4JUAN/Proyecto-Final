@@ -32,6 +32,29 @@ function enter(boton) {
     }
 }
 
+function Dirigir_Area(Areas){
+
+    if(Areas === 'Labores'){
+        window.location.href="labores.html"
+    }
+    if(Areas === 'Riego'){
+        window.location.href="riego.html"
+    }
+    if(Areas === 'Mantenimiento'){
+        window.location.href="mantenimiento.html"
+    }
+    if(Areas === 'Fitosanidad'){
+        window.location.href="fitosanidad.html"
+    }
+    if(Areas === 'Corte'){
+        window.location.href="corte.html"
+    }
+    if(Areas === 'Poscosecha'){
+        window.location.href="poscosecha.html"
+    }
+    
+}
+
 function dirigirANuestrosProductos(){
     window.location.href="flores.html"
 }
