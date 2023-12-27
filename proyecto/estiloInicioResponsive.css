@@ -38,7 +38,6 @@
         width: 30%;
         margin-top: 5px;
         margin-bottom: none;
-        cursor: pointer;
     }
     .logo2{
         width: 100%;
@@ -69,7 +68,6 @@
     .btn1:hover{
         background-color: #984f5d ;
         transition: 0.3s ;
-        cursor: pointer;
         color: #ffffff;
         transform: translateY(5px) translateX(8px); 
         padding: 16px;
@@ -79,7 +77,6 @@
     .btn2:hover{
         background-color: #984f5d ;
         transition: 0.3s ;
-        cursor: pointer;
         color: #ffffff;
         transform: translateY(5px) translateX(7px); 
         padding: 16px 29.3px;
@@ -103,11 +100,10 @@
     .Contenedor{
         z-index: 2;
         display: flex;
-        border-color: solid 2px rgb(5, 8, 1, 0.6);
         position: fixed;
         width: 100%;
-        border: none;
-        border-bottom:#000000 solid 2px;
+        height: 60px;
+        border-bottom:#000000 solid 10px;
         box-shadow:  0 5px 7.9px 3px #000000;
     }
     
