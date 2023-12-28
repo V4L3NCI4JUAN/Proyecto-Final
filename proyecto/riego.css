@@ -4,7 +4,7 @@
 }
 header{
     width: 100%;
-    height: 100px;
+    height: 90px;
     border: none;
     border-bottom:#000000 solid 2px;
     box-shadow: inset 0 -10px 7.9px -3px #000000;    
@@ -139,4 +139,10 @@ body{
 .todo2{
     position: absolute;
     transform: translate(5%, -5%) translateY(5%);
+}
+.img-riego{
+    margin-top: 4pc; 
+    margin-left: 2pc; 
+    width: 45%; 
+    height: 300px;
 }

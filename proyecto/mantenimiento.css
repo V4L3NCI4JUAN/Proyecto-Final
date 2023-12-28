@@ -4,7 +4,7 @@
 }
 header{
     width: 100%;
-    height: 100px;
+    height: 90px;
     border: none;
     border-bottom:#000000 solid 2px;
     box-shadow: inset 0 -10px 7.9px -3px #000000;    
@@ -130,7 +130,15 @@ body{
     margin-bottom: 5pc;
     width: 90%;
 }
-
+.tx3{
+    display: flex;
+}
+.tx3 img{
+    width: 45%; height: 400px; margin-right: 50px;
+}
+.tx3 div{
+    width: 90%;
+}
 .todo{
     width: 90%;
     position: relative;
@@ -139,3 +147,27 @@ body{
     position: absolute;
     transform: translate(5%, -5%) translateY(5%);
 }
+.img-mant2{
+    margin-top: 4pc; margin-left: 2pc;
+    width: 45%;
+    height: 300px;
+}
+
+/*poscosecha*/
+.img1{
+    display: block;
+}
+.img2{
+    display: none;
+}
+.img3{
+    display: block;
+}
+.img4{
+    display: none;
+}
+.img5{
+    margin-left: 2pc;
+    margin-top: 2pc;
+}
+/*poscosecha*/

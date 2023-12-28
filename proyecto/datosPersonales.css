@@ -1,7 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
-    text-align: justify;
+    text-align: left;
        
 }
 header{
@@ -25,13 +25,6 @@ header{
     border-bottom:#000000 solid 2px;
     box-shadow:  0 5px 7.9px 3px #000000;
 }
-
-
-
-
-
-
-
 .btn1{
     background: none;
     color: #ffff;
@@ -104,22 +97,4 @@ li{
     list-style: none;
     margin: 10px;
 }
-.lista{
-    line-height: 30px;
-    top: 356%;
-    right: 50%;
-    position: absolute;
-    display: flex;
-    width: 65%;
-    transform: translate(50%, -50%);
-    border: #000000 solid 1px;
-    padding: 10px;
-    border: #f48e87 solid 1px;
-}
-.Datos-Solicitados{
-    font-weight: bold;
-    width: 50%;
-}
-.Datos{
-    width: 50%;
-}
+
